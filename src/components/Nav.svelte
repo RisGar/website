@@ -1,10 +1,30 @@
+<script>
+  import Monogram from "./icons/Monogram.svelte"
+</script>
+
 <nav class="nav">
-  <a class="logolink" href="/">
-    <div class="monogram">JW</div>
+  <a
+    class="transition ease-linear duration-200 fill-dark-yellow hover:fill-magenta hover:underline underline-offset-4 m-2 block text-lg"
+    href="/"
+  >
+    <Monogram />
   </a>
-  <a class="link" href="/blog"> Blog </a>
-  <a class="link" href="/about"> About </a>
-  <a class="social" href="https://twitter.com/me">
+  <a
+    class="transition ease-linear duration-200 hover:text-magenta hover:underline underline-offset-4 m-2 block text-lg"
+    href="/blog"
+  >
+    Blog
+  </a>
+  <a
+    class="transition ease-linear duration-200 hover:text-magenta hover:underline underline-offset-4 m-2 block text-lg"
+    href="/about"
+  >
+    About
+  </a>
+  <a
+    class="social transition ease-linear duration-200 fill-white hover:fill-magenta m-1"
+    href="https://twitter.com/me"
+  >
     <svg
       class="socialicon"
       xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +35,10 @@
       />
     </svg>
   </a>
-  <a class="social" href="https://github.com/RisGar">
+  <a
+    class="social transition ease-linear duration-200 fill-white hover:fill-magenta m-1"
+    href="https://github.com/RisGar"
+  >
     <svg
       class="socialicon"
       xmlns="http://www.w3.org/2000/svg"
@@ -26,21 +49,19 @@
       />
     </svg>
   </a>
-  <a class="social" href="https://dev.to/me">
+  <a
+    class="social transition ease-linear duration-200 fill-white hover:fill-magenta m-1"
+    href="https://dev.to/me"
+  >
     <svg
-      class="socialicon"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 50 40"
-      style="enable-background:new 0 0 50 40"
-      xmlSpace="preserve"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      ><path
+        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+      /></svg
     >
-      <path
-        d="M15.7 15.5c-.4-.3-.7-.4-1.1-.4h-1.7v10.1h1.7c.4 0 .8-.1 1.1-.4.4-.3.6-.7.6-1.3v-6.7c0-.6-.2-1-.6-1.3z"
-      />
-      <path
-        d="M47 0H3C1.3 0 0 1.3 0 3v34c0 1.7 1.3 3 3 3h44c1.7 0 3-1.3 3-3V3c0-1.7-1.3-3-3-3zM19.1 23.5c0 1.3-.4 2.4-1.3 3.2-.8.9-1.9 1.3-3.3 1.3h-4.4V12.3h4.5c1.3 0 2.4.4 3.2 1.3.8.8 1.3 1.9 1.3 3.2v6.7zm9.1-8.4h-5.1v3.6h3.1v2.8h-3.1v3.7h5.1V28h-5.9c-.6 0-1-.2-1.4-.6-.4-.4-.6-.8-.6-1.4V14.2c0-.6.2-1 .6-1.4.4-.4.8-.6 1.4-.6h5.9v2.9zM37.5 26c-.6 1.3-1.3 2-2.2 2-.9 0-1.7-.7-2.2-2l-3.7-13.8h3.1L35.3 23l2.8-10.8h3.1L37.5 26z"
-      />
-    </svg>
   </a>
 </nav>
 
@@ -61,11 +82,6 @@
   }
 
   .link {
-    color: var(--t-subdue);
-    display: block;
-    margin-left: 1rem;
-    text-decoration: none;
-    font-size: var(--f-d1);
     text-transform: uppercase;
     padding-top: 0.75em;
     padding-bottom: 0.75em;
@@ -83,10 +99,9 @@
     width: 2em;
     height: 2em;
     margin-right: 0.5rem;
-    color: var(--c-black);
     font-weight: 900;
     letter-spacing: -0.125rem;
-    border: 3px solid currentColor;
+    border: 3px solid;
     border-radius: 50%;
   }
 
@@ -103,11 +118,5 @@
     display: block;
     width: 1.25rem;
     height: 1.25rem;
-    fill: var(--t-subdue);
-    transition: fill linear 150ms;
-
-    &:hover {
-      fill: var(--t-active);
-    }
   }
 </style>

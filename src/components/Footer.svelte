@@ -1,6 +1,11 @@
 <footer class="footer">
   &copy; {new Date().getFullYear()} Rishab Garg
-  <small class="byline">🚀 Built by Astro</small>
+  <small class="uppercase block m-2">
+    🚀 Built with <a
+      class="transition ease-linear duration-200 hover:text-magenta"
+      href="https://astro.build/">Astro</a
+    >
+  </small>
 </footer>
 
 <style lang="scss">
