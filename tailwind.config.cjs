@@ -18,5 +18,11 @@ module.exports = {
       "gutter-grey": "#4b5263",
       "comment-grey": "#5c6370",
     },
+    transitionDuration: {
+      DEFAULT: "200ms",
+    },
+    transitionTimingFunction: {
+      DEFAULT: "linear",
+    },
   },
 }

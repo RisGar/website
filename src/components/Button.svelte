@@ -1,13 +1,6 @@
-<span class="button">
+<span
+  class="inline-block border-solid border-2 text-dark-yellow border-dark-yellow py-2 px-4 font-bold uppercase 
+  transition hover:text-magenta hover:border-magenta"
+>
   <slot />
 </span>
-
-<style lang="scss">
-  .button {
-    display: inline-block;
-    border: 3px solid currentColor;
-    padding: 0.5em 1em;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-</style>

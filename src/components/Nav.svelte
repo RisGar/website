@@ -2,31 +2,31 @@
   import Monogram from "./icons/Monogram.svelte"
 </script>
 
-<nav class="nav">
+<nav class="nav flex items-center py-4 px-8">
   <a
-    class="transition ease-linear duration-200 fill-dark-yellow hover:fill-magenta hover:underline underline-offset-4 m-2 block text-lg"
+    class="flex transition fill-dark-yellow hover:fill-magenta hover:underline underline-offset-4 m-2 text-lg"
     href="/"
   >
     <Monogram />
   </a>
   <a
-    class="transition ease-linear duration-200 hover:text-magenta hover:underline underline-offset-4 m-2 block text-lg"
+    class="transition hover:text-magenta hover:underline underline-offset-4 m-2 block text-lg"
     href="/blog"
   >
     Blog
   </a>
   <a
-    class="transition ease-linear duration-200 hover:text-magenta hover:underline underline-offset-4 m-2 block text-lg"
+    class="transition hover:text-magenta hover:underline underline-offset-4 m-2 block text-lg"
     href="/about"
   >
     About
   </a>
   <a
-    class="social transition ease-linear duration-200 fill-white hover:fill-magenta m-1"
+    class="transition fill-white hover:fill-magenta ml-auto"
     href="https://twitter.com/me"
   >
     <svg
-      class="socialicon"
+      class="block w-5 h-5"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 16 16"
     >
@@ -36,11 +36,11 @@
     </svg>
   </a>
   <a
-    class="social transition ease-linear duration-200 fill-white hover:fill-magenta m-1"
+    class="transition fill-white hover:fill-magenta ml-3"
     href="https://github.com/RisGar"
   >
     <svg
-      class="socialicon"
+      class="block w-5 h-5"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 16 16"
     >
@@ -50,10 +50,11 @@
     </svg>
   </a>
   <a
-    class="social transition ease-linear duration-200 fill-white hover:fill-magenta m-1"
+    class="transition fill-white hover:fill-magenta ml-3"
     href="https://dev.to/me"
   >
     <svg
+      class="block w-5 h-5"
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
@@ -64,59 +65,3 @@
     >
   </a>
 </nav>
-
-<style lang="scss">
-  .nav {
-    display: flex;
-    align-items: center;
-    padding-top: 1rem;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-  }
-
-  .logolink {
-    display: block;
-    color: var(--t-fg);
-    text-decoration: none;
-  }
-
-  .link {
-    text-transform: uppercase;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
-
-    &:focus,
-    &:hover {
-      color: var(--t-active);
-    }
-  }
-
-  .monogram {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2em;
-    height: 2em;
-    margin-right: 0.5rem;
-    font-weight: 900;
-    letter-spacing: -0.125rem;
-    border: 3px solid;
-    border-radius: 50%;
-  }
-
-  .social {
-    display: block;
-    margin-left: auto;
-
-    + .social {
-      margin-left: 0.75rem;
-    }
-  }
-
-  .socialicon {
-    display: block;
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-</style>

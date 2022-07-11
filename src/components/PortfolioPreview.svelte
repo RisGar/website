@@ -1,14 +1,22 @@
 <script lang="ts">
   export let article
   const { frontmatter } = article
+  import Button from "./Button.svelte"
 </script>
 
-<div class="card">
-  <div class="titleCard" style={`background-image:url(${frontmatter.img})`}>
-    <h1 class="title">{frontmatter.title}</h1>
+<div class="relative border-2 border-solid border-white">
+  <div
+    class="relative bg-cover pt-[37.5%] bg-center "
+    style={`background-image:url(${frontmatter.img})`}
+  >
+    <h1
+      class="absolute top-0 w-full h-full flex items-center justify-center text-white flex-col m-0 text-3xl uppercase font-black tracking-wider"
+    >
+      {frontmatter.title}
+    </h1>
   </div>
-  <div class="pa3">
-    <p class="desc mt0 mb2">{frontmatter.description}</p>
+  <div class="p-6">
+    <p class="mt-0 mb-4 text-lg">{frontmatter.description}</p>
     <div class="tags">
       Tagged:
       {#each frontmatter.tags as t}
@@ -17,87 +25,17 @@
         </div>
       {/each}
     </div>
-    <a class="link" href={article.url}>
-      <span class="linkInner">View</span>
+    <a
+      class="link absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-[#000] bg-opacity-25 
+      opacity-0 transition-opacity hover:opacity-100"
+      href={article.url}
+    >
+      <Button>View</Button>
     </a>
   </div>
 </div>
 
 <style lang="scss">
-  .card {
-    position: relative;
-    color: var(--t-bg);
-    background: var(--t-fg);
-    border: 1px solid #f0f0f0;
-  }
-
-  .title {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    color: white;
-    flex-direction: column;
-    font-size: var(--f-u4);
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.0625em;
-  }
-
-  .titleCard {
-    position: relative;
-    background-size: cover;
-    background-position: 50% 100%;
-    padding-top: 37.5%;
-  }
-
-  .desc {
-    font-size: var(--f-u1);
-    line-height: 1.4;
-  }
-
-  .link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--t-bg);
-    font-size: var(--f-u2);
-    font-weight: 700;
-    background: rgba(0, 0, 0, 0.25);
-    opacity: 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: opacity 150ms linear;
-
-    &:focus,
-    &:hover {
-      opacity: 1;
-
-      .linkInner {
-        transform: translateY(0);
-        border-color: rgba(255, 255, 255, 0.625);
-      }
-    }
-  }
-
-  .linkInner {
-    padding: 0.375em 1em;
-    border: 2px solid rgba(255, 255, 255, 0);
-    transition: transform 300ms cubic-bezier(0, 0.4, 0.6, 1),
-      border-color 1s linear;
-    transform: translateY(25%);
-  }
-
   .tags {
     font-size: var(--f-d2);
     text-transform: uppercase;

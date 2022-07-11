@@ -19,19 +19,13 @@ const articles = (await Astro.glob("./blog/**/*.md"))
       title="All Articles | Rishab Garg"
       description="Rishab Garg's blog articles"
     />
-    <style lang="scss">
-      .grid {
-        display: grid;
-        grid-gap: 3rem;
-      }
-    </style>
   </head>
 
   <body>
     <Nav />
     <div class="wrapper">
       <h1 class="title mt4 mb4">All Articles</h1>
-      <div class="grid">
+      <div class="grid gap-12">
         {articles.map((article) => <PortfolioPreview article={article} />)}
       </div>
     </div>
