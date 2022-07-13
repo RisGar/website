@@ -11,9 +11,9 @@
   </a>
   <a
     class="transition hover:text-magenta hover:underline underline-offset-4 m-2 block text-lg"
-    href="/blog"
+    href="/projects"
   >
-    Blog
+    Projects
   </a>
   <a
     class="transition hover:text-magenta hover:underline underline-offset-4 m-2 block text-lg"

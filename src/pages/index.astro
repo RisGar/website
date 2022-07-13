@@ -1,4 +1,5 @@
 ---
+// Component Imports
 import MainHead from "@components/MainHead.astro"
 import Button from "@components/Button.svelte"
 import Nav from "@components/Nav.svelte"
@@ -6,8 +7,8 @@ import Footer from "@components/Footer.svelte"
 import PortfolioPreview from "@components/PortfolioPreview.svelte"
 
 // Data Fetching: List all Markdown posts in the repo.
-const articles = await Astro.glob("./blog/**/*.md")
-const featuredArticle = articles[0]
+const projects = await Astro.glob("./project/**/*.md")
+const featuredProject = projects[0]
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -20,22 +21,47 @@ const featuredArticle = articles[0]
 
   <body>
     <Nav />
-    <header>
-      <h1 class="text-5xl text-light-red">Rishab Garg</h1>
+    <header class="max-w-[85vw] mx-auto relative overflow-hidden">
+      <h1 class="font-medium text-light-red text-3xl mb-6 mt-0 md:text-7xl">
+        Rishab Garg
+      </h1>
+      <div>
+        <span
+          class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded z-10 md:text-lg"
+          >👩‍💻 Developer
+        </span>&nbsp;
+        <span
+          class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded z-10 ml-4 md:text-lg"
+          >🎤 Speaker
+        </span>&nbsp;
+        <span
+          class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded z-10 ml-4 md:text-lg"
+          >✏️ Writer
+        </span>
+        <p class="text-xl mt-6 mb-0">Lover of dogs, roadtrips, and poetry.</p>
+      </div>
     </header>
 
-    <main class="">
-      <div class="grid grid-cols-3 gap-12">
-        <div class="">
-          <h3 class="text-2xl text-center">About me</h3>
-          <p class="text-light-red">Hi I am Rishab</p>
+    <main class="max-w-[85vw] mx-auto px-8 my-8">
+      <div class="grid gap-20 xl:grid-cols-[2fr_1fr]">
+        <div class="section">
+          <h3 class="font-medium text-4xl mt-16 mb-8">Selected Work</h3>
+          <PortfolioPreview project={featuredProject} />
+          <div class="text-center mt-8">
+            <a href="/projects">
+              <Button>View All</Button>
+            </a>
+          </div>
         </div>
-        <div class="col-span-2">
-          <h3 class="text-2xl text-center">Blog articles</h3>
-          <PortfolioPreview article={featuredArticle} />
-          <a href="/blog">
-            <Button>View All</Button>
-          </a>
+        <div class="section">
+          <h3 class="font-medium text-4xl mt-16 mb-8">About me</h3>
+          <p class="leading-loose mb-4">
+            Hello! <br />
+            I'm Jeanine, and this is my website. It was made using Astro, a new way
+            to build static sites. This is just an example template for you to modify.
+          </p><p>
+            <a href="/about">Read more</a>
+          </p>
         </div>
       </div>
     </main>

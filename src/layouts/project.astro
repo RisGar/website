@@ -77,7 +77,7 @@ const { content } = Astro.props
       <h1 class="title">{content.title}</h1>
     </header>
     <div class="leadIn">
-      <div class="wrapper pt8 pb8 mb8 tac">
+      <div class="wrapper py-16 mb-16 text-center">
         {content.tags.map((t) => <span class="tag">{t}</span>)}
         <h3 class="tagline">{content.description}</h3>
       </div>
@@ -87,8 +87,8 @@ const { content } = Astro.props
         <slot></slot>
       </div>
     </div>
-    <footer class="tac mt6">
-      <a href="/blog">
+    <footer class="text-center mt-12">
+      <a href="/projects">
         <Button>View More</Button>
       </a>
     </footer>

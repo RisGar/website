@@ -4,7 +4,7 @@ import Footer from "@components/Footer.svelte"
 import Nav from "@components/Nav.svelte"
 import PortfolioPreview from "@components/PortfolioPreview.svelte"
 
-const articles = (await Astro.glob("./blog/**/*.md"))
+const projects = (await Astro.glob("./project/**/*.md"))
   .filter(({ frontmatter }) => Boolean(frontmatter.publishDate))
   .sort(
     (a, b) =>
@@ -16,17 +16,17 @@ const articles = (await Astro.glob("./blog/**/*.md"))
 <html lang="en">
   <head>
     <MainHead
-      title="All Articles | Rishab Garg"
-      description="Rishab Garg's blog articles"
+      title="All Projects | Rishab Garg"
+      description="All of my projects"
     />
   </head>
 
   <body>
     <Nav />
-    <div class="wrapper">
-      <h1 class="title mt4 mb4">All Articles</h1>
-      <div class="grid gap-12">
-        {articles.map((article) => <PortfolioPreview article={article} />)}
+    <div class="max-w-[85vw] mx-auto px-8">
+      <h1 class="text-4xl my-8">All Projects</h1>
+      <div class="grid gap-12 xl:grid-cols-2">
+        {projects.map((p) => <PortfolioPreview project={p} />)}
       </div>
     </div>
     <Footer />
