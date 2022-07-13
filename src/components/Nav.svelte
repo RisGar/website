@@ -23,7 +23,7 @@
   </a>
   <a
     class="transition fill-white hover:fill-magenta ml-auto"
-    href="https://twitter.com/me"
+    href="https://twitter.com/rishab_grg"
   >
     <svg
       class="block w-5 h-5"

@@ -10,84 +10,33 @@ const { content } = Astro.props
 <html lang={content.lang || "en"}>
   <head>
     <MainHead title={content.title} description={content.description} />
-    <style lang="scss">
-      .hero {
-        padding: 8rem;
-        display: flex;
-        background-color: var(--t-fg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 25vw;
-        color: white;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .tag {
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-        text-transform: uppercase;
-
-        &:nth-of-type(1n) {
-          color: var(--c-green);
-        }
-
-        &:nth-of-type(2n) {
-          color: var(--c-orange);
-        }
-
-        &:nth-of-type(3n) {
-          color: var(--c-blue);
-        }
-
-        &:nth-of-type(4n) {
-          color: var(--c-pink);
-        }
-      }
-
-      .title {
-        font-size: var(--f-u10);
-        font-weight: 900;
-        text-transform: uppercase;
-        letter-spacing: 0.0625em;
-      }
-
-      .leadIn {
-        color: var(--t-bg);
-        background-color: var(--t-fg);
-      }
-
-      .tagline {
-        font-weight: 300;
-        font-size: var(--f-u3);
-        line-height: 1.5;
-      }
-
-      .content {
-        font-size: var(--f-u1);
-        line-height: 2.2;
-      }
-    </style>
   </head>
 
   <body>
     <Nav />
-    <header style={`background-image:url(${content.img})`} class="hero">
-      <h1 class="title">{content.title}</h1>
+    <header
+      style={`background-image:url(${content.img})`}
+      class="p-32 flex bg-no-repeat bg-cover min-h-[50vh] text-[#fff] flex-col items-center justify-center bg-transparent bg-center"
+    >
+      <h1 class="text-6xl font-extrabold uppercase tracking-widest">
+        {content.title}
+      </h1>
     </header>
-    <div class="leadIn">
-      <div class="wrapper py-16 mb-16 text-center">
-        {content.tags.map((t) => <span class="tag">{t}</span>)}
-        <h3 class="tagline">{content.description}</h3>
-      </div>
+    <div class="wrapper pt-16 pb-14 text-center">
+      {content.tags.map((t) => (
+        <span class="text-sm font-bold lowercase tracking-wider inline-block text-dark-yellow mr-2 py-1 px-2 bg-gutter-grey rounded transition hover:text-magenta hover:cursor-pointer">
+          {t}
+        </span>
+      ))}
+
+      <h3 class="font-light text-xl mt-6">{content.description}</h3>
     </div>
-    <div class="wrapper wrapper__readable">
-      <div class="content">
+    <div class="max-w-[60vw] mx-auto px-8">
+      <div class="leading-loose">
         <slot></slot>
       </div>
     </div>
-    <footer class="text-center mt-12">
+    <footer class="text-center mt-8">
       <a href="/projects">
         <Button>View More</Button>
       </a>

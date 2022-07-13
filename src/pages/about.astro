@@ -6,37 +6,17 @@ import Nav from "@components/Nav.svelte"
 
 <html lang="en">
   <head>
-    <MainHead title="About | Rishab Garg" description="About Rishab Garg" />
-    <style lang="scss">
-      .heroImg {
-        max-height: 24rem;
-        object-fit: cover;
-        overflow: hidden;
-
-        img {
-          width: 100%;
-        }
-      }
-
-      .bio {
-        font-size: var(--f-u1);
-        line-height: 2;
-      }
-    </style>
+    <MainHead
+      title="About | Rishab Garg"
+      description="More information about me"
+    />
   </head>
 
   <body>
     <Nav />
-    <div class="wrapper">
-      <h1>About Rishab Garg</h1>
-      <div class="heroImg">
-        <img
-          width="1400"
-          height="350"
-          src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75"
-        />
-      </div>
-      <div class="bio wrapper wrapper__readable mt8">
+    <div class="max-w-[85vw] mx-auto px-8">
+      <h1 class="text-4xl my-8">About Rishab Garg</h1>
+      <div class="text-lg max-w-[60vw]">
         <p>
           Cream cheese say cheese stinking bishop. Brie fondue hard cheese
           bocconcini feta camembert de normandie babybel airedale. Red leicester

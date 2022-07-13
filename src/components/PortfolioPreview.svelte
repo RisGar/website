@@ -17,16 +17,14 @@
   </div>
   <div class="p-6">
     <p class="mt-0 mb-4 text-lg">{frontmatter.description}</p>
-    <div class="text-sm font-bold lowercase tracking-wider">
-      {#each frontmatter.tags as t}
-        <div
-          class="inline-block text-dark-yellow mr-2 py-1 px-2 bg-gutter-grey rounded"
-          data-tag={t}
-        >
-          {t}
-        </div>
-      {/each}
-    </div>
+    {#each frontmatter.tags as t}
+      <div
+        class="text-sm font-bold lowercase tracking-wider inline-block text-dark-yellow mr-2 py-1 px-2 bg-gutter-grey rounded"
+        data-tag={t}
+      >
+        {t}
+      </div>
+    {/each}
     <a
       class="link absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-[#000] bg-opacity-25 
       opacity-0 transition-opacity hover:opacity-100"
