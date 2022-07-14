@@ -3,13 +3,17 @@ import MainHead from "@components/MainHead.astro"
 import Button from "@components/Button.svelte"
 import Nav from "@components/Nav.svelte"
 import Footer from "@components/Footer.svelte"
+import Tag from "@components/Tag.svelte"
 
 const { content } = Astro.props
 ---
 
 <html lang={content.lang || "en"}>
   <head>
-    <MainHead title={content.title} description={content.description} />
+    <MainHead
+      title={content.title + " | Rishab Garg"}
+      description={content.description}
+    />
   </head>
 
   <body>
@@ -23,11 +27,7 @@ const { content } = Astro.props
       </h1>
     </header>
     <div class="wrapper pt-16 pb-14 text-center">
-      {content.tags.map((t) => (
-        <span class="text-sm font-bold lowercase tracking-wider inline-block text-dark-yellow mr-2 py-1 px-2 bg-gutter-grey rounded transition hover:text-magenta hover:cursor-pointer">
-          {t}
-        </span>
-      ))}
+      {content.tags.map((t) => <Tag tag={t} />)}
 
       <h3 class="font-light text-xl mt-6">{content.description}</h3>
     </div>

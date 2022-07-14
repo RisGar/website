@@ -7,7 +7,6 @@ description: |
   We built an unofficial Mars Rover Landing site in celebration of NASA’s Perseverance Rover.
 tags:
   - design
-  - dev
   - branding
 ---
 

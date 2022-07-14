@@ -10,7 +10,7 @@
     style={`background-image:url(${frontmatter.img})`}
   >
     <h1
-      class="absolute top-0 w-full h-full flex items-center justify-center text-white flex-col m-0 text-3xl uppercase font-black tracking-wider"
+      class="absolute top-0 w-full h-full flex items-center justify-center text-[#fff] flex-col m-0 text-3xl uppercase font-black tracking-wider"
     >
       {frontmatter.title}
     </h1>

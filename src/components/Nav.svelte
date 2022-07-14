@@ -24,6 +24,8 @@
   <a
     class="transition fill-white hover:fill-magenta ml-auto"
     href="https://twitter.com/rishab_grg"
+    target="_blank"
+    rel="nofollow"
   >
     <svg
       class="block w-5 h-5"
@@ -38,6 +40,8 @@
   <a
     class="transition fill-white hover:fill-magenta ml-3"
     href="https://github.com/RisGar"
+    target="_blank"
+    rel="nofollow"
   >
     <svg
       class="block w-5 h-5"
@@ -51,7 +55,9 @@
   </a>
   <a
     class="transition fill-white hover:fill-magenta ml-3"
-    href="https://dev.to/me"
+    href="https://www.linkedin.com/in/rishab-grg/"
+    target="_blank"
+    rel="nofollow"
   >
     <svg
       class="block w-5 h-5"

@@ -6,7 +6,6 @@ import Nav from "@components/Nav.svelte"
 import Footer from "@components/Footer.svelte"
 import PortfolioPreview from "@components/PortfolioPreview.svelte"
 
-// Data Fetching: List all Markdown posts in the repo.
 const projects = await Astro.glob("./project/**/*.md")
 const featuredProject = projects[0]
 
@@ -29,14 +28,10 @@ const featuredProject = projects[0]
         <span
           class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded z-10 md:text-lg"
           >👩‍💻 Developer
-        </span>&nbsp;
+        </span>
         <span
           class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded z-10 ml-4 md:text-lg"
-          >🎤 Speaker
-        </span>&nbsp;
-        <span
-          class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded z-10 ml-4 md:text-lg"
-          >✏️ Writer
+          >🎓 Student
         </span>
         <p class="text-xl mt-6 mb-0">Lover of dogs, roadtrips, and poetry.</p>
       </div>
