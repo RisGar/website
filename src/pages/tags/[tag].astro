@@ -16,7 +16,7 @@ export const getStaticPaths = () => {
 
 const { tag } = Astro.params
 
-const projects = (await Astro.glob("../project/**/*.md"))
+const projects = (await Astro.glob<Frontmatter>("../project/**/*.md"))
   .filter(({ frontmatter }) => frontmatter.tags.some((t) => t === tag))
   .sort(
     (a, b) =>

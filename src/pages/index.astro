@@ -6,8 +6,13 @@ import Nav from "@components/Nav.svelte"
 import Footer from "@components/Footer.svelte"
 import PortfolioPreview from "@components/PortfolioPreview.svelte"
 
-const projects = await Astro.glob("./project/**/*.md")
-const featuredProject = projects[0]
+const project = (await Astro.glob<Frontmatter>("./project/**/*.md"))
+  .filter(({ frontmatter }) => Boolean(frontmatter.publishDate))
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.publishDate).valueOf() -
+      new Date(a.frontmatter.publishDate).valueOf()
+  )[0]
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -33,15 +38,15 @@ const featuredProject = projects[0]
           class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded z-10 ml-4 md:text-lg"
           >🎓 Student
         </span>
-        <p class="text-xl mt-6 mb-0">Lover of dogs, roadtrips, and poetry.</p>
+        <p class="text-xl mt-6 mb-0">Hobby progammer and high school student</p>
       </div>
     </header>
 
     <main class="max-w-[85vw] mx-auto px-8 my-8">
       <div class="grid gap-20 xl:grid-cols-[2fr_1fr]">
         <div class="section">
-          <h3 class="font-medium text-4xl mt-16 mb-8">Selected Work</h3>
-          <PortfolioPreview project={featuredProject} />
+          <h3 class="font-medium text-4xl mt-16 mb-8">Latest Project</h3>
+          <PortfolioPreview project={project} />
           <div class="text-center mt-8">
             <a href="/projects">
               <Button>View All</Button>
@@ -50,10 +55,9 @@ const featuredProject = projects[0]
         </div>
         <div class="section">
           <h3 class="font-medium text-4xl mt-16 mb-8">About me</h3>
-          <p class="leading-loose mb-4">
+          <p class="leading-loose mb-4 text-lg">
             Hello! <br />
-            I'm Jeanine, and this is my website. It was made using Astro, a new way
-            to build static sites. This is just an example template for you to modify.
+            I'm Rishab, and this is my website. (WIP)
           </p><p>
             <a href="/about">Read more</a>
           </p>

@@ -1,12 +1,14 @@
 <script lang="ts">
-  export let project
+  import { MarkdownInstance } from "astro"
+
+  export let project: MarkdownInstance<Frontmatter>
   const { frontmatter } = project
   import Button from "./Button.svelte"
 </script>
 
-<div class="relative border-2 border-solid border-white">
+<div class="relative border-2 border-solid border-white rounded-md">
   <div
-    class="relative bg-cover pt-[37.5%] bg-center "
+    class="relative bg-cover pt-[37.5%] bg-center"
     style={`background-image:url(${frontmatter.img})`}
   >
     <h1

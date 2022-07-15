@@ -4,7 +4,7 @@ import Footer from "@components/Footer.svelte"
 import Nav from "@components/Nav.svelte"
 import PortfolioPreview from "@components/PortfolioPreview.svelte"
 
-const projects = (await Astro.glob("./project/**/*.md"))
+const projects = (await Astro.glob<Frontmatter>("./project/**/*.md"))
   .filter(({ frontmatter }) => Boolean(frontmatter.publishDate))
   .sort(
     (a, b) =>
