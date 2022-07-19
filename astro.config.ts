@@ -22,6 +22,7 @@ export default defineConfig({
           "favicon.ico",
           "apple-touch-icon.png",
           "safari-pinned-tab.svg",
+          "screenshot.png",
         ],
         manifest: {
           name: metadata.title,
