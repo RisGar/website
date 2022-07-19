@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && tsc --noEmit && astro build",
+    "build": "astro build",
+    "check": "astro check && tsc --noEmit",
     "start": "astro dev",
     "preview": "astro preview",
     "postinstall": "husky install"
