@@ -16,13 +16,6 @@ export default defineConfig({
   vite: {
     plugins: [
       VitePWA({
-        registerType: "autoUpdate",
-        includeAssets: [
-          "favicon.ico",
-          "apple-touch-icon.png",
-          "safari-pinned-tab.svg",
-          "screenshot.png",
-        ],
         manifest: {
           name: metadata.title,
           short_name: metadata.short_title,
