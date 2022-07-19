@@ -7824,28 +7824,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"risgar.github.io@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "risgar.github.io@workspace:."
-  dependencies:
-    "@astrojs/svelte": ^0.4.1
-    "@astrojs/tailwind": ^0.2.4
-    "@commitlint/cli": ^17.0.3
-    "@commitlint/config-conventional": ^17.0.3
-    "@types/eslint": ^8.4.5
-    "@typescript-eslint/parser": ^5.30.7
-    astro: ^1.0.0-beta.73
-    eslint: ^8.20.0
-    eslint-plugin-astro: ^0.15.0
-    husky: ^8.0.1
-    prettier: ^2.7.1
-    prettier-plugin-astro: ^0.1.1
-    sass: ^1.53.0
-    svelte: ^3.49.0
-    vite-plugin-pwa: ^0.12.3
-  languageName: unknown
-  linkType: soft
-
 "rollup-plugin-terser@npm:^7.0.0":
   version: 7.0.2
   resolution: "rollup-plugin-terser@npm:7.0.2"
@@ -9451,6 +9429,28 @@ __metadata:
   checksum: c93d8dfe908a0140a4ae9c0ebc87a33805b416a33ee638a605b551523eec94a9632165e54632f6d57a39c5f948c4bab10e0e066525e9a4b87a79f0d04fbca374
   languageName: node
   linkType: hard
+
+"website@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "website@workspace:."
+  dependencies:
+    "@astrojs/svelte": ^0.4.1
+    "@astrojs/tailwind": ^0.2.4
+    "@commitlint/cli": ^17.0.3
+    "@commitlint/config-conventional": ^17.0.3
+    "@types/eslint": ^8.4.5
+    "@typescript-eslint/parser": ^5.30.7
+    astro: ^1.0.0-beta.73
+    eslint: ^8.20.0
+    eslint-plugin-astro: ^0.15.0
+    husky: ^8.0.1
+    prettier: ^2.7.1
+    prettier-plugin-astro: ^0.1.1
+    sass: ^1.53.0
+    svelte: ^3.49.0
+    vite-plugin-pwa: ^0.12.3
+  languageName: unknown
+  linkType: soft
 
 "whatwg-url@npm:^7.0.0":
   version: 7.1.0

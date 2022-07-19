@@ -47,5 +47,5 @@ export default defineConfig({
       }),
     ],
   },
-  site: "https://risgar.github.io/",
+  site: "https://rishab-garg.me/",
 })
