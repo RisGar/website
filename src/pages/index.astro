@@ -16,6 +16,11 @@ const project = (await Astro.glob<Frontmatter>("./project/**/*.md"))
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
+
+// Service worker
+import { registerSW } from "virtual:pwa-register"
+
+registerSW({ immediate: true })
 ---
 
 <html lang="en">

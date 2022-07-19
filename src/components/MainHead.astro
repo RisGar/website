@@ -20,7 +20,7 @@ const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
 <meta property="og:title" content={title} />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Portfolio | Rishab Garg" />
-<meta property="og:image" content="/screenshot.png" />
+<meta property="og:image" content="/icons/summary_large_image.png" />
 <meta property="og:description" name="description" content={description} />
 <meta property="og:url" content="https://rishab-garg.me/" />
 
@@ -43,11 +43,3 @@ const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
   href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
   rel="stylesheet"
 />
-<!--Service worker -->
-<script>
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register("/sw.js", { scope: "/" })
-    })
-  }
-</script>
