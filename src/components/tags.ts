@@ -1,1 +1,1 @@
-export default ["frontend", "backend", "dev", "design", "branding"]
+export default ["frontend", "backend", "dev", "design"]
