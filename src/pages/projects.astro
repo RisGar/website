@@ -1,8 +1,8 @@
 ---
-import MainHead from "@components/MainHead.astro"
-import Footer from "@components/Footer.svelte"
-import Nav from "@components/Nav.svelte"
-import PortfolioPreview from "@components/PortfolioPreview.svelte"
+import MainHead from "../components/MainHead.astro"
+import Footer from "../components/Footer.svelte"
+import Nav from "../components/Nav.svelte"
+import PortfolioPreview from "../components/PortfolioPreview.svelte"
 
 const projects = (await Astro.glob<Frontmatter>("./project/**/*.md"))
   .filter(({ frontmatter }) => Boolean(frontmatter.publishDate))

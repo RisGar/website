@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# temporary
-# yarn astro check
-# tsc --noEmit
+yarn astro check
+tsc --noEmit
