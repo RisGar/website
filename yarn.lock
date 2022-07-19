@@ -45,34 +45,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/language-server@npm:^0.13.4":
-  version: 0.13.4
-  resolution: "@astrojs/language-server@npm:0.13.4"
+"@astrojs/language-server@npm:^0.20.0":
+  version: 0.20.0
+  resolution: "@astrojs/language-server@npm:0.20.0"
   dependencies:
-    "@astrojs/svelte-language-integration": ^0.1.2
     "@vscode/emmet-helper": ^2.8.4
-    lodash: ^4.17.21
     source-map: ^0.7.3
-    typescript: ~4.6.2
-    vscode-css-languageservice: ^5.1.13
-    vscode-html-languageservice: ^4.2.2
-    vscode-languageserver: 7.0.0
-    vscode-languageserver-protocol: ^3.16.0
-    vscode-languageserver-textdocument: ^1.0.1
-    vscode-languageserver-types: ^3.16.0
-    vscode-uri: ^3.0.2
+    typescript: ~4.6.4
+    vscode-css-languageservice: ^6.0.1
+    vscode-html-languageservice: ^5.0.0
+    vscode-languageserver: ^8.0.1
+    vscode-languageserver-protocol: ^3.17.1
+    vscode-languageserver-textdocument: ^1.0.4
+    vscode-languageserver-types: ^3.17.1
+    vscode-uri: ^3.0.3
   bin:
     astro-ls: bin/nodeServer.js
-  checksum: 1fe5d7cd23d6603528c23e6ecdafb6f96d6221a03b74a394b70471eafae6af1434349dd6f0454094816165c057253ef1dc0c54f373e97042913997d92daa2044
+  checksum: 403ec6f310171255e9ab5ce7ffc34b3d68499767634d105fa9d0780a0d89d72608fba1ab70fc68eaec55bec6eeec63b5cc0196f7e3d3358b3f0170f5d90523ac
   languageName: node
   linkType: hard
 
-"@astrojs/markdown-remark@npm:^0.11.7":
-  version: 0.11.7
-  resolution: "@astrojs/markdown-remark@npm:0.11.7"
+"@astrojs/markdown-remark@npm:^0.12.0":
+  version: 0.12.0
+  resolution: "@astrojs/markdown-remark@npm:0.12.0"
   dependencies:
     "@astrojs/micromark-extension-mdx-jsx": ^1.0.3
-    "@astrojs/prism": ^0.6.0
+    "@astrojs/prism": ^0.6.1
     acorn: ^8.7.1
     acorn-jsx: ^5.3.2
     assert: ^2.0.0
@@ -95,7 +93,7 @@ __metadata:
     unist-util-map: ^3.1.1
     unist-util-visit: ^4.1.0
     vfile: ^5.3.2
-  checksum: 0b10830888d818fb66c158be7fd27fa26e3623c12fd2a12d7e55a007c6beb3d61381c35f0dc41d0541823e3a0865a1829554e7433d3f447079167cbc0c828a8a
+  checksum: be6bbff4c57ba4f345aa90aaf2f4ee63d4a63f51cd81b81fa20338c16b335b9525af14e32844cb883886625896f0b8e6c0cf5d302f49e7d9982d46c5189c1bae
   languageName: node
   linkType: hard
 
@@ -116,26 +114,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/prism@npm:0.6.0, @astrojs/prism@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "@astrojs/prism@npm:0.6.0"
-  checksum: 49aeb37716f33fad1e9d781e79e2682d3627e01561d87c42a1dc554902d6ea298842c3a54f8488056445065d421571429e85b2a5972af5c991247c1b553de59c
+"@astrojs/prism@npm:0.6.1, @astrojs/prism@npm:^0.6.1":
+  version: 0.6.1
+  resolution: "@astrojs/prism@npm:0.6.1"
+  checksum: e7b5a7cb74b9a1436cde160e9304938760fc20602d5f71ca325f8d7386dc17c7cc2b30a7a5f2d829ae025be5772146078c5ad985d6d30d8f4b17662e78a7d712
   languageName: node
   linkType: hard
 
-"@astrojs/svelte-language-integration@npm:^0.1.2":
-  version: 0.1.6
-  resolution: "@astrojs/svelte-language-integration@npm:0.1.6"
-  dependencies:
-    svelte: ^3.24.0
-    svelte2tsx: ^0.5.5
-  checksum: 1a277d581d58a54bfa9394f3d1df5bf1bbe1ac92e93a445b47b004d4746aad6e01636fb28c4c69fc8e821bb516d915a9610bd3f9f0c4b13c19671846bd285c5b
-  languageName: node
-  linkType: hard
-
-"@astrojs/svelte@npm:^0.4.0":
-  version: 0.4.0
-  resolution: "@astrojs/svelte@npm:0.4.0"
+"@astrojs/svelte@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@astrojs/svelte@npm:0.4.1"
   dependencies:
     "@sveltejs/vite-plugin-svelte": ^1.0.0-next.48
     postcss-load-config: ^3.1.4
@@ -144,7 +132,7 @@ __metadata:
     vite: ^2.9.10
   peerDependencies:
     svelte: ^3.46.4
-  checksum: 1de6383c935fe2daff5f1a4e79f97136d344dc046a8176f2987c7c59668302e97ea07858bc75df0ea73c03249d472d05821d8cbbf67352c08d34c9843a18f431
+  checksum: da05ec6f196bfde46e0d91d6d44bd86e6a2fe544eb0b1f8361c2b1b88a746993e14aa4e6e91306fc259c8f7920a916d50259a9a636134c0e3c922ec4b78a27dd
   languageName: node
   linkType: hard
 
@@ -160,9 +148,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/telemetry@npm:^0.4.0":
-  version: 0.4.0
-  resolution: "@astrojs/telemetry@npm:0.4.0"
+"@astrojs/telemetry@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "@astrojs/telemetry@npm:0.4.1"
   dependencies:
     ci-info: ^3.3.1
     debug: ^4.3.4
@@ -172,7 +160,7 @@ __metadata:
     is-wsl: ^2.2.0
     node-fetch: ^3.2.5
     which-pm-runs: ^1.1.0
-  checksum: c47bde993e8176913dd40e72d49d8760b982b7d7885b5253de718367b2509455a6e775a759023c9cca44242e76ea79bfc1c8c1504695b51d9d21d6a28dce9b9a
+  checksum: 1818f9ede38c61cf5d6aaae84bacaa18a996551644b2437135f84d86247c950899ee42633c91c41211b94d8c7e4d49b8b18c77b2ee85ad1af0ea9a164c0ffff8
   languageName: node
   linkType: hard
 
@@ -2183,7 +2171,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:^8":
+"@types/eslint@npm:^8.4.5":
   version: 8.4.5
   resolution: "@types/eslint@npm:8.4.5"
   dependencies:
@@ -2730,15 +2718,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:^1.0.0-beta.72":
-  version: 1.0.0-beta.72
-  resolution: "astro@npm:1.0.0-beta.72"
+"astro@npm:^1.0.0-beta.73":
+  version: 1.0.0-beta.73
+  resolution: "astro@npm:1.0.0-beta.73"
   dependencies:
     "@astrojs/compiler": ^0.19.0
-    "@astrojs/language-server": ^0.13.4
-    "@astrojs/markdown-remark": ^0.11.7
-    "@astrojs/prism": 0.6.0
-    "@astrojs/telemetry": ^0.4.0
+    "@astrojs/language-server": ^0.20.0
+    "@astrojs/markdown-remark": ^0.12.0
+    "@astrojs/prism": 0.6.1
+    "@astrojs/telemetry": ^0.4.1
     "@astrojs/webapi": ^0.12.0
     "@babel/core": ^7.18.2
     "@babel/generator": ^7.18.2
@@ -2793,7 +2781,7 @@ __metadata:
     zod: ^3.17.3
   bin:
     astro: astro.js
-  checksum: 4de311985c47aa5731a4a9aaefb8844456891b7df7d05ae6be0415b98b1bf1035519956d084451da5b7fc5818486af8d7d20957fe4b430e9003d9f63bdce92dc
+  checksum: 39168f105e791e23496951eab062eac17c389a78d4fc4afd0043fc1f823e6d9d1c2a4cc974cf1b805b83dfaf0b0dacffe9b2b4aeea9e662d23ed2fd9522792d5
   languageName: node
   linkType: hard
 
@@ -5789,7 +5777,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:^4.17.21":
+"lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -7840,13 +7828,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "risgar.github.io@workspace:."
   dependencies:
-    "@astrojs/svelte": ^0.4.0
+    "@astrojs/svelte": ^0.4.1
     "@astrojs/tailwind": ^0.2.4
     "@commitlint/cli": ^17.0.3
     "@commitlint/config-conventional": ^17.0.3
-    "@types/eslint": ^8
+    "@types/eslint": ^8.4.5
     "@typescript-eslint/parser": ^5.30.7
-    astro: ^1.0.0-beta.72
+    astro: ^1.0.0-beta.73
     eslint: ^8.20.0
     eslint-plugin-astro: ^0.15.0
     husky: ^8.0.1
@@ -8552,7 +8540,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte2tsx@npm:^0.5.11, svelte2tsx@npm:^0.5.5":
+"svelte2tsx@npm:^0.5.11":
   version: 0.5.11
   resolution: "svelte2tsx@npm:0.5.11"
   dependencies:
@@ -8565,7 +8553,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^3.24.0, svelte@npm:^3.49.0":
+"svelte@npm:^3.49.0":
   version: 3.49.0
   resolution: "svelte@npm:3.49.0"
   checksum: 5b7cb8dbf6b6581b50fab1de63cbcb81816081a1240b03e234b299268fff2f3237bf8f92b683a848f95453353b5694dfe26fa05a55da185a4bb0cd8b80d87dd4
@@ -8923,7 +8911,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:~4.6.2":
+"typescript@npm:~4.6.4":
   version: 4.6.4
   resolution: "typescript@npm:4.6.4"
   bin:
@@ -8943,7 +8931,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@~4.6.2#~builtin<compat/typescript>":
+"typescript@patch:typescript@~4.6.4#~builtin<compat/typescript>":
   version: 4.6.4
   resolution: "typescript@patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=7ad353"
   bin:
@@ -9326,61 +9314,44 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vscode-css-languageservice@npm:^5.1.13":
-  version: 5.4.2
-  resolution: "vscode-css-languageservice@npm:5.4.2"
+"vscode-css-languageservice@npm:^6.0.1":
+  version: 6.0.1
+  resolution: "vscode-css-languageservice@npm:6.0.1"
   dependencies:
     vscode-languageserver-textdocument: ^1.0.4
-    vscode-languageserver-types: ^3.16.0
-    vscode-nls: ^5.0.0
+    vscode-languageserver-types: ^3.17.1
+    vscode-nls: ^5.0.1
     vscode-uri: ^3.0.3
-  checksum: faa35690c1f06a469ef335eba85158df453c54e2cacd37788c5e1f29458183753b95b564952acecb3fab31fee3d061a8e70234f2dc49e82244cdc519280fcc1b
+  checksum: 7e5cf77737cce9e50c15b70b3a942210dea26d5fe8ce32a9a8a2fefbf63306a43b65e862d04822bb530e45c77c581b0b5ba267dd114cfa1f890941c219d5242b
   languageName: node
   linkType: hard
 
-"vscode-html-languageservice@npm:^4.2.2":
-  version: 4.2.5
-  resolution: "vscode-html-languageservice@npm:4.2.5"
+"vscode-html-languageservice@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "vscode-html-languageservice@npm:5.0.0"
   dependencies:
     vscode-languageserver-textdocument: ^1.0.4
-    vscode-languageserver-types: ^3.16.0
-    vscode-nls: ^5.0.0
+    vscode-languageserver-types: ^3.17.1
+    vscode-nls: ^5.0.1
     vscode-uri: ^3.0.3
-  checksum: 40098e3476fe0e425b285e5662798309f0a7472547e7de8446e17bc1b0364c22e3d1575c216fcd457f40b4304cae71cd254197a7f12fda0f1c2ce3c685dd3912
+  checksum: 0f80e35d84fa3ea1773b9ab3fc825e7430da20dd5d458ea1a36393f19fd89ef1e62ef423d98312e7ca7c790eede366c0a0add2bf2afe232796a40f7a42fa9531
   languageName: node
   linkType: hard
 
-"vscode-jsonrpc@npm:6.0.0":
-  version: 6.0.0
-  resolution: "vscode-jsonrpc@npm:6.0.0"
-  checksum: 3a67a56f287e8c449f2d9752eedf91e704dc7b9a326f47fb56ac07667631deb45ca52192e9bccb2ab108764e48409d70fa64b930d46fc3822f75270b111c5f53
+"vscode-jsonrpc@npm:8.0.2":
+  version: 8.0.2
+  resolution: "vscode-jsonrpc@npm:8.0.2"
+  checksum: 9d055fd4c87ef1093b0eecb5370bfaf3402179b6639149b6d0f7e0bde60cf580091c7e07b0caff868f10f90331b17e7383c087217c077fdd1b5ae7bc23b72f77
   languageName: node
   linkType: hard
 
-"vscode-jsonrpc@npm:8.0.1":
-  version: 8.0.1
-  resolution: "vscode-jsonrpc@npm:8.0.1"
-  checksum: bf88444bf7523614c799fe66f9576a5610d98632d5fe2745beb49bd1c2d8dafe801a1c047fea0c9f10aec2c5fa568863b4bb0048dba09b00ba58ebb727544468
-  languageName: node
-  linkType: hard
-
-"vscode-languageserver-protocol@npm:3.16.0":
-  version: 3.16.0
-  resolution: "vscode-languageserver-protocol@npm:3.16.0"
+"vscode-languageserver-protocol@npm:3.17.2, vscode-languageserver-protocol@npm:^3.17.1":
+  version: 3.17.2
+  resolution: "vscode-languageserver-protocol@npm:3.17.2"
   dependencies:
-    vscode-jsonrpc: 6.0.0
-    vscode-languageserver-types: 3.16.0
-  checksum: ac30cbe4b778344f7b93defbaa1332dcb5a5a3a0afda6b88618a9ed44093c1ae1d2f11548bdcff42a73bb46943df025d4fe721559144dd7bf25ae60663aabe06
-  languageName: node
-  linkType: hard
-
-"vscode-languageserver-protocol@npm:^3.16.0":
-  version: 3.17.1
-  resolution: "vscode-languageserver-protocol@npm:3.17.1"
-  dependencies:
-    vscode-jsonrpc: 8.0.1
-    vscode-languageserver-types: 3.17.1
-  checksum: e1dd28e7dc7bbcfececd56ace1f271eadf70b014e4bc091e04c509324a68a005f3515eb77611c507bf9193f9dbf0f0e04d723349cbc8c6827e844ae701f465ee
+    vscode-jsonrpc: 8.0.2
+    vscode-languageserver-types: 3.17.2
+  checksum: f4a05d3a631af315a32a3700953c2117fa4e5c44bc03764154c6605da9cbbcb50a1b01b46f11b2f6948916d01b4948bebf1a84c135fc73b27fa839c58d0847ab
   languageName: node
   linkType: hard
 
@@ -9391,32 +9362,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vscode-languageserver-types@npm:3.16.0":
-  version: 3.16.0
-  resolution: "vscode-languageserver-types@npm:3.16.0"
-  checksum: 7a44fb10b9fbeb9529f832337b7f0430fc6275d62945b86851d425a950e22da3917ef5f6c552688191769dd1eae047c6ee9ec3d9f2280498353007c2dfe0725c
+"vscode-languageserver-types@npm:3.17.2, vscode-languageserver-types@npm:^3.17.1":
+  version: 3.17.2
+  resolution: "vscode-languageserver-types@npm:3.17.2"
+  checksum: ef2d862d22f622b64de0f428773d50a5928ec6cdd485960a7564ebe4fd4a3c8bcd956f29eb15bc45a0f353846e62f39f6c764d2ab85ce774b8724411ba84342f
   languageName: node
   linkType: hard
 
-"vscode-languageserver-types@npm:3.17.1, vscode-languageserver-types@npm:^3.15.1, vscode-languageserver-types@npm:^3.16.0":
+"vscode-languageserver-types@npm:^3.15.1":
   version: 3.17.1
   resolution: "vscode-languageserver-types@npm:3.17.1"
   checksum: ceb4145dfd840e026a51a6059af6ca2ced606763d945ab24851b1871bf8614f12e7f6fdb1f865ba6ea26f62db066ef188b183b1c830e0f38f28e08b584136464
   languageName: node
   linkType: hard
 
-"vscode-languageserver@npm:7.0.0":
-  version: 7.0.0
-  resolution: "vscode-languageserver@npm:7.0.0"
+"vscode-languageserver@npm:^8.0.1":
+  version: 8.0.2
+  resolution: "vscode-languageserver@npm:8.0.2"
   dependencies:
-    vscode-languageserver-protocol: 3.16.0
+    vscode-languageserver-protocol: 3.17.2
   bin:
     installServerIntoExtension: bin/installServerIntoExtension
-  checksum: 80cfbd5f8f0869c5369d1a61fe86b3210ee941cb646eb31b672045670ef3ce213dc1fd3bcd4cef6ef8bc7c5025f98e4a70dad645d97a0bd4708962bbd921683a
+  checksum: f564417bf08f5400e8381b6d0defb4e7242a04525696b1728b05524b89932047af625fac07715b4d36307e1de599cbef54d240c15101fe831aaface431f21e1b
   languageName: node
   linkType: hard
 
-"vscode-nls@npm:^5.0.0":
+"vscode-nls@npm:^5.0.0, vscode-nls@npm:^5.0.1":
   version: 5.0.1
   resolution: "vscode-nls@npm:5.0.1"
   checksum: a9dc0cf1fcf5a0ca6e450ae86cc8501d0073b737b26ad9eaaa71210803cdba11fb9644313b389842444db95d3c40caa134eaa7ad7b4f53c93adef633a6ad6e4a
@@ -9444,7 +9415,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vscode-uri@npm:^3.0.2, vscode-uri@npm:^3.0.3":
+"vscode-uri@npm:^3.0.3":
   version: 3.0.3
   resolution: "vscode-uri@npm:3.0.3"
   checksum: 683bf9de835c3cef0b51c104a4949bf746148ded7c2287ebafcc506d20aa0e90b99385a972dba8132903420dba67fc33a5e146e30212c4a6b3ca5d74d1f95702

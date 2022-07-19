@@ -5,10 +5,10 @@ import Nav from "@components/Nav.svelte"
 import Footer from "@components/Footer.svelte"
 import Tag from "@components/Tag.svelte"
 
-const { content } = Astro.props
+const { content } = Astro.props as { content: Frontmatter }
 ---
 
-<html lang={content.lang || "en"}>
+<html lang="en">
   <head>
     <MainHead
       title={content.title + " | Rishab Garg"}
