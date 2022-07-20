@@ -1,4 +1,4 @@
-# My personal portfolio
+# My personal website
 
 ## 🧞 Commands
 

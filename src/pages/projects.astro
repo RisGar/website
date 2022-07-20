@@ -15,16 +15,13 @@ const projects = (await Astro.glob<Frontmatter>("./project/**/*.md"))
 
 <html lang="en">
   <head>
-    <MainHead
-      title="All Projects | Rishab Garg"
-      description="All of my projects"
-    />
+    <MainHead title="All Projects | Rishab Garg" description="My portfolio" />
   </head>
 
   <body>
     <Nav />
-    <div class="max-w-[85vw] mx-auto px-8">
-      <h1 class="text-4xl my-8">All Projects</h1>
+    <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
+      <h1 class="text-4xl mb-8">All Projects</h1>
       <div class="grid gap-12 xl:grid-cols-2">
         {projects.map((p) => <PortfolioPreview project={p} />)}
       </div>

@@ -28,19 +28,17 @@ const projects = (await Astro.glob<Frontmatter>("../project/**/*.md"))
 <html lang="en">
   <head>
     <MainHead
-      title={"All " + tag + " projects | Rishab Garg"}
-      description={"All of my " + tag + " projects"}
+      title={'All "' + tag + '" projects | Rishab Garg'}
+      description={"My portfolio filtered by tags"}
     />
   </head>
 
   <body>
     <Nav />
-    <div class="max-w-[85vw] mx-auto px-8">
-      <h1 class="text-4xl my-8">
+    <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
+      <h1 class="text-4xl mb-8">
         All
-        <span
-          class="text-dark-yellow hover:text-magenta transition hover:cursor-pointer"
-        >
+        <span class="text-dark-yellow">
           {tag}
         </span>
         projects

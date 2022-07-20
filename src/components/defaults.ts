@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Portfolio | Rishab Garg",
-  short_title: "Portfolio",
-  description: "My personal portfolio",
+  title: "Homepage | Rishab Garg",
+  short_title: "Rishab Garg",
+  description: "Rishab's homepage",
 }

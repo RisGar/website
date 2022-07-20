@@ -20,9 +20,11 @@ const { content } = Astro.props as { content: Frontmatter }
     <Nav />
     <header
       style={`background-image:url(${content.img})`}
-      class="p-32 flex bg-no-repeat bg-cover min-h-[50vh] text-[#fff] flex-col items-center justify-center bg-transparent bg-center"
+      class="p-32 flex bg-no-repeat bg-cover min-h-[30vh] text-[#fff] flex-col items-center justify-center bg-transparent bg-center"
     >
-      <h1 class="text-6xl font-extrabold uppercase tracking-widest">
+      <h1
+        class="text-6xl font-extrabold uppercase tracking-wider py-4 px-8 bg-gutter-grey bg-opacity-60 backdrop-blur rounded-md"
+      >
         {content.title}
       </h1>
     </header>
@@ -31,7 +33,7 @@ const { content } = Astro.props as { content: Frontmatter }
 
       <h3 class="font-light text-xl mt-6">{content.description}</h3>
     </div>
-    <div class="max-w-[60vw] mx-auto px-8">
+    <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
       <div class="leading-loose">
         <slot></slot>
       </div>
