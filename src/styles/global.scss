@@ -1,4 +1,7 @@
 @import "colours";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
   font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
@@ -7,8 +10,8 @@
 }
 
 body {
-  background-color: $black;
-  color: $white;
+  @apply bg-black;
+  @apply text-white;
   position: relative;
 }
 
