@@ -15,7 +15,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/compiler@npm:^0.18.0 || ^0.19.0, @astrojs/compiler@npm:^0.19.0":
+"@astrojs/compiler@npm:0.18.0 - 0.23.0 || ^0.23.0":
+  version: 0.23.3
+  resolution: "@astrojs/compiler@npm:0.23.3"
+  checksum: 3267089dce036ae00ceca83447b61a41d4c283895c0e0736bccca92bf5101aee80469fc5060ec2b4d5f73bb8376ccbae4adfba8fa6de7c4f5179a52c45f69c3b
+  languageName: node
+  linkType: hard
+
+"@astrojs/compiler@npm:^0.19.0":
   version: 0.19.0
   resolution: "@astrojs/compiler@npm:0.19.0"
   checksum: 070dcb2216fa24df236395784ce30c99305ac9ae7ef4ec2984969e8eaa7118f22806134c5cfbdb41d5de2f4bfe223ce6ea6a9b3e3deb20976efe6f10e80556ec
@@ -49,12 +56,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/markdown-remark@npm:^0.14.1":
-  version: 0.14.1
-  resolution: "@astrojs/markdown-remark@npm:0.14.1"
+"@astrojs/markdown-remark@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@astrojs/markdown-remark@npm:1.0.0"
   dependencies:
     "@astrojs/micromark-extension-mdx-jsx": ^1.0.3
-    "@astrojs/prism": ^0.7.0
+    "@astrojs/prism": ^1.0.0
     acorn: ^8.7.1
     acorn-jsx: ^5.3.2
     github-slugger: ^1.4.0
@@ -74,7 +81,7 @@ __metadata:
     unist-util-map: ^3.1.1
     unist-util-visit: ^4.1.0
     vfile: ^5.3.2
-  checksum: 65b4f80bd8cd0e3d3929bd9959047109e64ba16359415ac03891fd70ddcf1569bfffac67654f9253c4bf344c419cf9f7957de80fb4d9ad2f730b52f82c524ea2
+  checksum: 75495900c8a05094d7ccb2412d45b0f9a4e0ef82d19bed9624e45c201d05ed36ba33fa455ec923de79471072ec3d8adc815bb02ad27057616b260fe7fe102bf7
   languageName: node
   linkType: hard
 
@@ -95,18 +102,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/prism@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "@astrojs/prism@npm:0.7.0"
+"@astrojs/prism@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "@astrojs/prism@npm:1.0.1"
   dependencies:
     prismjs: ^1.28.0
-  checksum: 867963035787c7a1167a4c2b4a6128f5ca12bb1f1c593d20da630e826469b48467fcfe62fda75f59b4743c5060861906cdc8799ddf87285db7cdebcff7c905af
+  checksum: 185504469f68b813b786b53e2254472b7acd092bb4181fd230064ffc35990dd6d17db6fcd3ff2ebd20f5083ce13d726412995f55be5cac3b770a68e2e70c733a
   languageName: node
   linkType: hard
 
-"@astrojs/svelte@npm:^0.5.1":
-  version: 0.5.1
-  resolution: "@astrojs/svelte@npm:0.5.1"
+"@astrojs/svelte@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@astrojs/svelte@npm:1.0.0"
   dependencies:
     "@sveltejs/vite-plugin-svelte": ^1.0.1
     postcss-load-config: ^3.1.4
@@ -115,25 +122,25 @@ __metadata:
     vite: ^3.0.0
   peerDependencies:
     svelte: ^3.46.4
-  checksum: 722e34e2e6aa6f52b943e591677604f2c1e94b19dd038328967b1b681f67cf801a66c705ac7fbfc01be47f5f5191cd5b48e6151fd4537a9597af7004514bc236
+  checksum: 14e2a192f0c4e375cfc9dfc57e0482d9e0c35ed5063bb09629ebfa43cb112816dc1866e37ffbb5cf64a600541f6b1e53b03fa7fa6c22b18bd050b0ea2c737100
   languageName: node
   linkType: hard
 
-"@astrojs/tailwind@npm:^0.2.5":
-  version: 0.2.5
-  resolution: "@astrojs/tailwind@npm:0.2.5"
+"@astrojs/tailwind@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@astrojs/tailwind@npm:1.0.0"
   dependencies:
     "@proload/core": ^0.3.2
     autoprefixer: ^10.4.7
     postcss: ^8.4.14
     tailwindcss: ^3.0.24
-  checksum: 8f0e0b34ad47e2d4fd1f28d6d40779c26b774ac93a3ca3ff240a75e0ea57fb563bd455e3d48eb2b52c4dca031597c1112543f4628c0ad7c3ea1f9a85624e3b9b
+  checksum: f69f2e5d6428bae70a7a051011174601c51419db33aedbcf430008250a6a414000a2cb44e75df8543b8cee5db57293e7a3c4be121ea739be6cc2d35ee5a35c71
   languageName: node
   linkType: hard
 
-"@astrojs/telemetry@npm:^0.4.1":
-  version: 0.4.1
-  resolution: "@astrojs/telemetry@npm:0.4.1"
+"@astrojs/telemetry@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@astrojs/telemetry@npm:1.0.0"
   dependencies:
     ci-info: ^3.3.1
     debug: ^4.3.4
@@ -143,16 +150,16 @@ __metadata:
     is-wsl: ^2.2.0
     node-fetch: ^3.2.5
     which-pm-runs: ^1.1.0
-  checksum: 1818f9ede38c61cf5d6aaae84bacaa18a996551644b2437135f84d86247c950899ee42633c91c41211b94d8c7e4d49b8b18c77b2ee85ad1af0ea9a164c0ffff8
+  checksum: fc198e3fc3ebcc72970d3a1637142841e2e82ba40b6c4f3485fbf2225e539e4c12dc0a3da84dddaabc45bbceab3b4bfad3a6d015a33ed3032491dc105efdc6da
   languageName: node
   linkType: hard
 
-"@astrojs/webapi@npm:^0.12.0":
-  version: 0.12.0
-  resolution: "@astrojs/webapi@npm:0.12.0"
+"@astrojs/webapi@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@astrojs/webapi@npm:1.0.0"
   dependencies:
-    node-fetch: ^3.2.4
-  checksum: 03ff5e7db76885ae36b5b7c1609d2e1d2cf5e3344f6f8ec2ad1a1ef1fa84e4cc41c8e6e9f399461f5b4288e188a0fa34d2f12a9d86966c073277ca8c2a524be0
+    node-fetch: ^3.2.5
+  checksum: fc489b8cdffe0c3446a95f3bec5ee65a4158c87f1da4b72667d79d8d0a08317ad50b27cd4661bd9740ea19d4662bc5a0ad77902189cab76809b7b11ba8177eca
   languageName: node
   linkType: hard
 
@@ -1099,37 +1106,37 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.32.0":
-  version: 5.32.0
-  resolution: "@typescript-eslint/parser@npm:5.32.0"
+"@typescript-eslint/parser@npm:^5.33.0":
+  version: 5.33.0
+  resolution: "@typescript-eslint/parser@npm:5.33.0"
   dependencies:
-    "@typescript-eslint/scope-manager": 5.32.0
-    "@typescript-eslint/types": 5.32.0
-    "@typescript-eslint/typescript-estree": 5.32.0
+    "@typescript-eslint/scope-manager": 5.33.0
+    "@typescript-eslint/types": 5.33.0
+    "@typescript-eslint/typescript-estree": 5.33.0
     debug: ^4.3.4
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 3fcfa183cad125c3198fd63701c6e13dad1cc984d309e8cd40ec9a2eb857902abfd7e9ee3f030b18eb1c18c795a61ea289ef147a7f9dfac38df905e7514316af
+  checksum: 2617aba987a70ee6b16ecc6afa6d245422df33a9d056018ff2e316159e667a0ab9d9c15fcea95e0ba65832661e71cc2753a221e77f0b0fab278e52c4497b8278
   languageName: node
   linkType: hard
 
-"@typescript-eslint/scope-manager@npm:5.32.0":
-  version: 5.32.0
-  resolution: "@typescript-eslint/scope-manager@npm:5.32.0"
+"@typescript-eslint/scope-manager@npm:5.33.0":
+  version: 5.33.0
+  resolution: "@typescript-eslint/scope-manager@npm:5.33.0"
   dependencies:
-    "@typescript-eslint/types": 5.32.0
-    "@typescript-eslint/visitor-keys": 5.32.0
-  checksum: 69bdeb029f39d1112299dc0cb0ddef30e51bdb782fdb79cc4e72fa448e00d71e39938d3bff3fa4ee43b3416c2e3b4564de2c37252914772b07eeedafb14412d6
+    "@typescript-eslint/types": 5.33.0
+    "@typescript-eslint/visitor-keys": 5.33.0
+  checksum: b2cbea9abd528d01a5acb2d68a2a5be51ec6827760d3869bdd70920cf6c3a4f9f96d87c77177f8313009d9db71253e4a75f8393f38651e2abaf91ef28e60fb9d
   languageName: node
   linkType: hard
 
-"@typescript-eslint/types@npm:5.32.0":
-  version: 5.32.0
-  resolution: "@typescript-eslint/types@npm:5.32.0"
-  checksum: 6758f54d8d7763893cd7c1753f525ef1777eee8b558bf3d54fd2a2ce691ca0cf813c68a26e4db83a1deae4e4a62b247f1195e15a1f3577f1293849f9e55a232c
+"@typescript-eslint/types@npm:5.33.0":
+  version: 5.33.0
+  resolution: "@typescript-eslint/types@npm:5.33.0"
+  checksum: 8bbddda84cb3adf5c659b0d42547a2d6ab87f4eea574aca5dd63a3bd85169f32796ecbddad3b27f18a609070f6b1d18a54018d488bad746ae0f6ea5c02206109
   languageName: node
   linkType: hard
 
@@ -1140,12 +1147,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/typescript-estree@npm:5.32.0":
-  version: 5.32.0
-  resolution: "@typescript-eslint/typescript-estree@npm:5.32.0"
+"@typescript-eslint/typescript-estree@npm:5.33.0":
+  version: 5.33.0
+  resolution: "@typescript-eslint/typescript-estree@npm:5.33.0"
   dependencies:
-    "@typescript-eslint/types": 5.32.0
-    "@typescript-eslint/visitor-keys": 5.32.0
+    "@typescript-eslint/types": 5.33.0
+    "@typescript-eslint/visitor-keys": 5.33.0
     debug: ^4.3.4
     globby: ^11.1.0
     is-glob: ^4.0.3
@@ -1154,17 +1161,17 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 6aee08be5d36603d038fb8340f324f5cb38519150c9b37c012f0c1ff2a4d8cf22fbc6835de31d069949c2b3d8ed3e729076a724ef29db4289d9fe73b97c9d310
+  checksum: 26f9005cdfb14654125a33d90d872b926820e560dff8970c4629fd5f6f47ad2a31e4c63161564d21bb42a8fc3ced0033994854ee37336ae07d90ccf6300d702b
   languageName: node
   linkType: hard
 
-"@typescript-eslint/visitor-keys@npm:5.32.0":
-  version: 5.32.0
-  resolution: "@typescript-eslint/visitor-keys@npm:5.32.0"
+"@typescript-eslint/visitor-keys@npm:5.33.0":
+  version: 5.33.0
+  resolution: "@typescript-eslint/visitor-keys@npm:5.33.0"
   dependencies:
-    "@typescript-eslint/types": 5.32.0
+    "@typescript-eslint/types": 5.33.0
     eslint-visitor-keys: ^3.3.0
-  checksum: 1f9b756d648c2346a6e8538ffde729d3d9ce6621fded3d9f15c96aa0ebf8f511daf8232470423fb36359c2113538a4daaf3336181be78a0cfbfd297af91ce9ba
+  checksum: d7e3653de6bac6841e6fcc54226b93ad6bdca4aa76ebe7d83459c016c3eebcc50d4f65ee713174bc267d765295b642d1927a778c5de707b8389e3fcc052aa4a1
   languageName: node
   linkType: hard
 
@@ -1458,31 +1465,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro-eslint-parser@npm:^0.4.0":
-  version: 0.4.1
-  resolution: "astro-eslint-parser@npm:0.4.1"
+"astro-eslint-parser@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "astro-eslint-parser@npm:0.5.0"
   dependencies:
-    "@astrojs/compiler": ^0.18.0 || ^0.19.0
+    "@astrojs/compiler": 0.18.0 - 0.23.0 || ^0.23.0
     "@typescript-eslint/types": ^5.25.0
     debug: ^4.3.4
     eslint-visitor-keys: ^3.0.0
     espree: ^9.0.0
-    mdast-util-from-markdown: ^1.2.0
-    synckit: ^0.7.1
-    yaml: ^2.1.1
-  checksum: b672ba7f2a249c69cf40aafb9ca508ecacbf1a0091ebbb5caedeb1cc3dde9d583c69523daad08a4aad00e0e498f188e5d376e7ab0ccbd9ce62af098b5036f07d
+    synckit: ^0.8.0
+  checksum: 6cb13f3a15ddee2fce3f3fe7e7ea69d29be05777963c0b3b2cb42b63fd35da8193d346a316cc85b6677b3be68f8c208a1fd018f9252d344422028a9bbfa175b3
   languageName: node
   linkType: hard
 
-"astro@npm:^1.0.0-rc.7":
-  version: 1.0.0-rc.7
-  resolution: "astro@npm:1.0.0-rc.7"
+"astro@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "astro@npm:1.0.3"
   dependencies:
     "@astrojs/compiler": ^0.23.1
     "@astrojs/language-server": ^0.20.0
-    "@astrojs/markdown-remark": ^0.14.1
-    "@astrojs/telemetry": ^0.4.1
-    "@astrojs/webapi": ^0.12.0
+    "@astrojs/markdown-remark": ^1.0.0
+    "@astrojs/telemetry": ^1.0.0
+    "@astrojs/webapi": ^1.0.0
     "@babel/core": ^7.18.2
     "@babel/generator": ^7.18.2
     "@babel/parser": ^7.18.4
@@ -1530,12 +1535,12 @@ __metadata:
     tsconfig-resolver: ^3.0.1
     unist-util-visit: ^4.1.0
     vfile: ^5.3.2
-    vite: 3.0.4
+    vite: 3.0.5
     yargs-parser: ^21.0.1
     zod: ^3.17.3
   bin:
     astro: astro.js
-  checksum: 13fdd117de94b8d8fe9a5b7abb3766efffed63eef57bfa4925961dbfa0ac37b5e0578f41adfabcee12322962b4b5ff5d6b9a8db137be54a46277d91463e4c23f
+  checksum: 1d1713350005d4e44d3a90124d95c2463678a5cca2e9cbd6e8a710d93bd9aa973be55a7780f39064a8f663176680a14bba02d3f156e81adef98020428898c1f1
   languageName: node
   linkType: hard
 
@@ -2855,19 +2860,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-astro@npm:^0.16.0":
-  version: 0.16.0
-  resolution: "eslint-plugin-astro@npm:0.16.0"
+"eslint-plugin-astro@npm:^0.17.1":
+  version: 0.17.1
+  resolution: "eslint-plugin-astro@npm:0.17.1"
   dependencies:
     "@typescript-eslint/types": ^5.25.0
-    astro-eslint-parser: ^0.4.0
+    astro-eslint-parser: ^0.5.0
     eslint-utils: ^3.0.0
     postcss: ^8.4.14
     postcss-selector-parser: ^6.0.10
     sourcemap-codec: ^1.4.8
   peerDependencies:
     eslint: ">=7.0.0"
-  checksum: ea4cbc27f02830978f7e44439017e8772fc6d154a46c06fbd2d3bc185b49b8c94700f2a180bc8a8f8714cdedbc7a5de1212eeaa97ae59b9f41ca0dbc38fde0bf
+  checksum: b81191670f99b14368097ac029fca599cef840034c197914ece3ff76335d5469dcc5442c3acabfe7ef86d10b42295c46d917291a382d28539a395ae78fa9a933
   languageName: node
   linkType: hard
 
@@ -4365,7 +4370,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mdast-util-from-markdown@npm:^1.0.0, mdast-util-from-markdown@npm:^1.2.0":
+"mdast-util-from-markdown@npm:^1.0.0":
   version: 1.2.0
   resolution: "mdast-util-from-markdown@npm:1.2.0"
   dependencies:
@@ -5200,7 +5205,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:^3.2.4, node-fetch@npm:^3.2.5":
+"node-fetch@npm:^3.2.5":
   version: 3.2.6
   resolution: "node-fetch@npm:3.2.6"
   dependencies:
@@ -5709,6 +5714,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss@npm:^8.4.16":
+  version: 8.4.16
+  resolution: "postcss@npm:8.4.16"
+  dependencies:
+    nanoid: ^3.3.4
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: 10eee25efd77868036403858577da0cefaf2e0905feeaba5770d5438ccdddba3d01cba8063e96b8aac4c6daa0ed413dd5ae0554a433a3c4db38df1d134cffc1f
+  languageName: node
+  linkType: hard
+
 "preferred-pm@npm:^3.0.3":
   version: 3.0.3
   resolution: "preferred-pm@npm:3.0.3"
@@ -5728,15 +5744,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-astro@npm:^0.4.0":
-  version: 0.4.0
-  resolution: "prettier-plugin-astro@npm:0.4.0"
+"prettier-plugin-astro@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "prettier-plugin-astro@npm:0.5.0"
   dependencies:
     "@astrojs/compiler": ^0.19.0
     prettier: ^2.7.1
     sass-formatter: ^0.7.2
     synckit: ^0.7.0
-  checksum: 07686266b86e19070b2a05b3681767a163a599ab1680e2d6b25b20e3329721f6810807709aeb72bab9580e56737a8e8008115f09597f991ad4033f11fede36d1
+  checksum: 7d9c41f3db1e6bacd1be0efca3d202c3f98829c56f71a60b6df42a9b421ddf00eaa83754aebc74fbc812f41bd8657944ce6c258b873741130098aa92e9e29405
   languageName: node
   linkType: hard
 
@@ -6235,16 +6251,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.54.3":
-  version: 1.54.3
-  resolution: "sass@npm:1.54.3"
+"sass@npm:^1.54.4":
+  version: 1.54.4
+  resolution: "sass@npm:1.54.4"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 9b405f602c0dcdad85e7f216cfa5ca9dfe3f7ded7b3928817cfe8dbfde0cd27b70f4cff724e229b233b3f51a06e71d3fcbbd7d3a0ff92b3e40ac57bc05b90b48
+  checksum: bb6aead09764de450a02b9a66e4ee538f0ba6bc8f2fc3905c71b2c302b5f47e089b510b86cfa7ef2d4139c210c8abf99fe157e7a5bd356c057f10d29e6c4b44c
   languageName: node
   linkType: hard
 
@@ -6746,13 +6762,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"synckit@npm:^0.7.1":
-  version: 0.7.3
-  resolution: "synckit@npm:0.7.3"
+"synckit@npm:^0.8.0":
+  version: 0.8.3
+  resolution: "synckit@npm:0.8.3"
   dependencies:
     "@pkgr/utils": ^2.3.0
     tslib: ^2.4.0
-  checksum: 15b1841c16e80e84e4eb7b43680f37ad94377a032cd9f5f6fd1c9cbd32bb1b7d1cf1c32111821d4f1b5477dffb599aeda7f0c1e70c7333fbedd80951d41bf5e8
+  checksum: ba6baa7c32e69b38eebb322a8eb1712a117f7f1eaa42e75623c7d6da43f0e61d3ac33fa962c2c58a8b37742f1e0ae9d21f04c9da0dbf34d618a8780055e9e1fa
   languageName: node
   linkType: hard
 
@@ -7335,7 +7351,39 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:3.0.4, vite@npm:^3.0.0":
+"vite@npm:3.0.5":
+  version: 3.0.5
+  resolution: "vite@npm:3.0.5"
+  dependencies:
+    esbuild: ^0.14.47
+    fsevents: ~2.3.2
+    postcss: ^8.4.16
+    resolve: ^1.22.1
+    rollup: ^2.75.6
+  peerDependencies:
+    less: "*"
+    sass: "*"
+    stylus: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    less:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: c00ec43356469032fa261872b028740526d5a5726132cb306741e2d9dca241dcb7b0b5d39181d5ebc39c5e82396511080640fa302c66e713a622e8bfa1f14a8d
+  languageName: node
+  linkType: hard
+
+"vite@npm:^3.0.0":
   version: 3.0.4
   resolution: "vite@npm:3.0.4"
   dependencies:
@@ -7502,21 +7550,21 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "website@workspace:."
   dependencies:
-    "@astrojs/svelte": ^0.5.1
-    "@astrojs/tailwind": ^0.2.5
+    "@astrojs/svelte": ^1.0.0
+    "@astrojs/tailwind": ^1.0.0
     "@commitlint/cli": ^17.0.3
     "@commitlint/config-conventional": ^17.0.3
     "@types/eslint": ^8.4.5
-    "@typescript-eslint/parser": ^5.32.0
-    astro: ^1.0.0-rc.7
+    "@typescript-eslint/parser": ^5.33.0
+    astro: ^1.0.3
     autoprefixer: ^10.4.8
     eslint: ^8.21.0
-    eslint-plugin-astro: ^0.16.0
+    eslint-plugin-astro: ^0.17.1
     husky: ^8.0.1
     postcss-nested: ^5.0.6
     prettier: ^2.7.1
-    prettier-plugin-astro: ^0.4.0
-    sass: ^1.54.3
+    prettier-plugin-astro: ^0.5.0
+    sass: ^1.54.4
     svelte: ^3.49.0
   languageName: unknown
   linkType: soft
