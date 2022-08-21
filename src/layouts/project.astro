@@ -3,31 +3,36 @@ import MainHead from "../components/MainHead.astro"
 import Button from "../components/Button.svelte"
 import Footer from "../components/Footer.svelte"
 import Tag from "../components/Tag.svelte"
+import tags from "../components/tags"
 
-const { content } = Astro.props as { content: Frontmatter }
+const { frontmatter } = Astro.props as { frontmatter: Frontmatter }
 ---
 
 <html lang="en">
   <MainHead
-    title={content.title + " | Rishab Garg"}
-    description={content.description}
+    title={frontmatter.title + " | Rishab Garg"}
+    description={frontmatter.description}
   />
 
   <body>
     <header
-      style={`background-image:url(${content.img})`}
-      class="p-32 flex bg-no-repeat bg-cover min-h-[30vh] text-[#fff] flex-col items-center justify-center bg-transparent bg-center"
+      style={`background-image:url(${frontmatter.img})`}
+      class="p-32 flex bg-no-repeat bg-cover min-h-[30vh] flex-col items-center justify-center bg-transparent bg-center"
     >
       <h1
-        class="text-6xl font-extrabold uppercase tracking-wider py-4 px-8 bg-gutter-grey bg-opacity-60 backdrop-blur rounded-md"
+        class="text-[#fff] text-6xl font-extrabold uppercase tracking-wider py-4 px-8 bg-gutter-grey bg-opacity-60 backdrop-blur rounded-md"
       >
-        {content.title}
+        {frontmatter.title}
       </h1>
     </header>
     <div class="wrapper pt-16 pb-14 text-center">
-      {content.tags.map((t) => <Tag tag={t} />)}
+      {
+        frontmatter.tags
+          .filter((t) => tags.includes(t))
+          .map((t) => <Tag tag={t} />)
+      }
 
-      <h3 class="font-light text-xl mt-6">{content.description}</h3>
+      <h3 class="font-light text-xl mt-6">{frontmatter.description}</h3>
     </div>
     <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
       <div class="leading-loose">

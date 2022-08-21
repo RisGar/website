@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { MarkdownInstance } from "astro"
+  import { MDXInstance } from "astro"
 
-  export let project: MarkdownInstance<Frontmatter>
+  export let project: MDXInstance<Frontmatter>
   const { frontmatter } = project
   import Button from "./Button.svelte"
 </script>
@@ -11,11 +11,11 @@
     class="relative bg-cover pt-[37.5%] bg-center"
     style={`background-image:url(${frontmatter.img})`}
   >
-    <h1
-      class="absolute top-0 w-full h-full flex items-center justify-center text-[#fff] flex-col m-0 xl:text-3xl md:text-2xl text-xl uppercase font-black tracking-wider"
+    <h3
+      class="absolute top-0 w-full h-full flex items-center justify-center text-[#fff] flex-col m-0 xl:text-3xl md:text-2xl text-xl uppercase font-extrabold tracking-wider"
     >
       {frontmatter.title}
-    </h1>
+    </h3>
   </div>
   <div class="p-6">
     <p class="mt-0 mb-4 text-lg text-center">{frontmatter.description}</p>

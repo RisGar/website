@@ -4,4 +4,5 @@ interface Frontmatter {
   img?: string
   description?: string
   tags: string[]
+  draft?: boolean
 }

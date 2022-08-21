@@ -5,8 +5,10 @@ import Button from "../components/Button.svelte"
 import Footer from "../components/Footer.svelte"
 import PortfolioPreview from "../components/PortfolioPreview.svelte"
 
-const project = (await Astro.glob<Frontmatter>("./project/**/*.md"))
-  .filter(({ frontmatter }) => Boolean(frontmatter.publishDate))
+const project = (await Astro.glob<Frontmatter>("./project/**/*.mdx"))
+  .filter(
+    ({ frontmatter }) => Boolean(frontmatter.publishDate) && !frontmatter.draft
+  )
   .sort(
     (a, b) =>
       new Date(b.frontmatter.publishDate).valueOf() -
@@ -44,7 +46,7 @@ const project = (await Astro.glob<Frontmatter>("./project/**/*.md"))
       <main class="mt-6 mb-8">
         <div class="grid gap-x-20 lg:grid-cols-2">
           <div class="section">
-            <h3 class="font-medium text-3xl mt-16 mb-8">Latest Project</h3>
+            <h2 class="font-medium text-3xl mt-16 mb-8">Latest Project</h2>
             <PortfolioPreview project={project} />
             <div class="mt-8 text-center lg:text-left">
               <a href="/projects">
@@ -53,7 +55,7 @@ const project = (await Astro.glob<Frontmatter>("./project/**/*.md"))
             </div>
           </div>
           <div class="section">
-            <h3 class="font-medium text-3xl mt-16 mb-8">About me</h3>
+            <h2 class="font-medium text-3xl mt-16 mb-8">About me</h2>
             <p class="leading-loose mb-4 text-lg">
               Hello! <br />
               I'm Rishab, and this is my website. (WIP)
