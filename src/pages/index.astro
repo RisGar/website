@@ -2,7 +2,6 @@
 // Component Imports
 import MainHead from "../components/MainHead.astro"
 import Button from "../components/Button.svelte"
-import Nav from "../components/Nav.svelte"
 import Footer from "../components/Footer.svelte"
 import PortfolioPreview from "../components/PortfolioPreview.svelte"
 
@@ -16,8 +15,6 @@ const project = (await Astro.glob<Frontmatter>("./project/**/*.md"))
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
-
-import { Spa } from "astro-spa"
 ---
 
 <html lang="en">
@@ -26,9 +23,6 @@ import { Spa } from "astro-spa"
   </head>
 
   <body>
-    <Spa defaultAnimation={false} progressBar={true} containerSelector={"body"}
-    />
-    <Nav />
     <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
       <header class="relative overflow-hidden">
         <h1 class="font-medium mb-6 text-4xl">Rishab Garg</h1>

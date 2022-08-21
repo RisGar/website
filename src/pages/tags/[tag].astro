@@ -2,7 +2,6 @@
 import tags from "../../components/tags"
 import MainHead from "../../components/MainHead.astro"
 import Footer from "../../components/Footer.svelte"
-import Nav from "../../components/Nav.svelte"
 import PortfolioPreview from "../../components/PortfolioPreview.svelte"
 
 export const getStaticPaths = () => {
@@ -34,7 +33,6 @@ const projects = (await Astro.glob<Frontmatter>("../project/**/*.md"))
   </head>
 
   <body>
-    <Nav />
     <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
       <h1 class="text-4xl mb-8">
         All

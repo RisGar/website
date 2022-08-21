@@ -1,7 +1,6 @@
 ---
 import MainHead from "../components/MainHead.astro"
 import Button from "../components/Button.svelte"
-import Nav from "../components/Nav.svelte"
 import Footer from "../components/Footer.svelte"
 import Tag from "../components/Tag.svelte"
 
@@ -9,15 +8,12 @@ const { content } = Astro.props as { content: Frontmatter }
 ---
 
 <html lang="en">
-  <head>
-    <MainHead
-      title={content.title + " | Rishab Garg"}
-      description={content.description}
-    />
-  </head>
+  <MainHead
+    title={content.title + " | Rishab Garg"}
+    description={content.description}
+  />
 
   <body>
-    <Nav />
     <header
       style={`background-image:url(${content.img})`}
       class="p-32 flex bg-no-repeat bg-cover min-h-[30vh] text-[#fff] flex-col items-center justify-center bg-transparent bg-center"

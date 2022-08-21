@@ -3243,6 +3243,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"flamethrower-router@npm:^0.0.0-meme.8":
+  version: 0.0.0-meme.8
+  resolution: "flamethrower-router@npm:0.0.0-meme.8"
+  checksum: 6826fe114efaadeabe3b356165af097c6ff4ba3c0f7eaac88cc41ba8b06dd644633390af84e07c31e2b3357a9ea33429966d4179612ca916970ec3c85c15d8f8
+  languageName: node
+  linkType: hard
+
 "flat-cache@npm:^3.0.4":
   version: 3.0.4
   resolution: "flat-cache@npm:3.0.4"
@@ -7637,6 +7644,7 @@ __metadata:
     autoprefixer: ^10.4.8
     eslint: ^8.22.0
     eslint-plugin-astro: ^0.17.1
+    flamethrower-router: ^0.0.0-meme.8
     husky: ^8.0.1
     postcss-nested: ^5.0.6
     prettier: ^2.7.1
