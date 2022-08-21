@@ -16,6 +16,26 @@ const project = (await Astro.glob<Frontmatter>("./project/**/*.md"))
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
+
+import { Spa } from "astro-spa"
+
+interface progressBarOptions {
+  height?: string // The height of the progress bar in CSS units.
+  secondary?: boolean // Whether or not the secondary progress bar will be displayed. Check the section, [Showing Progress Bar](#showing-progress-bar) for more details.
+  colors?: {
+    foreground?: string // The foreground color of the progress bar.
+    background?: string // The background color of the progress bar. This option is only respected when the `secondary` option is set to true.
+  }
+}
+
+const progressBarOptions: progressBarOptions = {
+  height: "0.5vh",
+  secondary: true,
+  colors: {
+    foreground: "#c678dd",
+    background: "#c678dd",
+  },
+}
 ---
 
 <html lang="en">
@@ -24,6 +44,7 @@ const project = (await Astro.glob<Frontmatter>("./project/**/*.md"))
   </head>
 
   <body>
+    <Spa defaultAnimation={false} progressBarOptions={progressBarOptions} />
     <Nav />
     <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
       <header class="relative overflow-hidden">

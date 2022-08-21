@@ -6,25 +6,25 @@
   class="nav flex items-center py-6 lg:max-w-[50vw] md:max-w-[70vw] max-w-[90vw] mx-auto"
 >
   <a
-    class="flex transition fill-dark-yellow hover:fill-magenta focus:text-magenta hover:underline focus:underline underline-offset-4 m-2 text-lg"
+    class="flex transition fill-dark-yellow hover:text-magenta focus:text-magenta hover:underline focus:underline underline-offset-4 m-2 text-lg"
     href="/"
   >
     <Monogram />
   </a>
   <a
-    class="transition hover:fill-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
+    class="transition hover:text-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
     href="/projects"
   >
     Projects
   </a>
   <a
-    class="transition hover:fill-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
+    class="transition hover:text-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
     href="/about"
   >
     About
   </a>
   <a
-    class="transition hover:fill-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
+    class="transition hover:text-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
     href="https://rishab-garg.medium.com/"
     target="_blank"
     rel="nofollow"
