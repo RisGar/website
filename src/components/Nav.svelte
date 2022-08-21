@@ -1,5 +1,8 @@
 <script>
+  import GitHub from "./icons/GitHub.svelte"
+  import LinkedIn from "./icons/LinkedIn.svelte"
   import Monogram from "./icons/Monogram.svelte"
+  import Twitter from "./icons/Twitter.svelte"
 </script>
 
 <nav
@@ -39,7 +42,7 @@
     rel="nofollow"
     data-spa-ignore
   >
-    Twitter
+    <Twitter />
   </a>
   <a
     class="transition fill-white hover:fill-magenta focus:fill-magenta ml-3"
@@ -48,7 +51,7 @@
     rel="nofollow"
     data-spa-ignore
   >
-    GitHub
+    <GitHub />
   </a>
   <a
     class="transition fill-white hover:fill-magenta focus:fill-magenta ml-3"
@@ -57,6 +60,6 @@
     rel="nofollow"
     data-spa-ignore
   >
-    LinkedIn
+    <LinkedIn />
   </a>
 </nav>
