@@ -2,7 +2,6 @@ parser: "@typescript-eslint/parser"
 
 extends:
   - plugin:astro/recommended
-  - plugin:astro/base-for-markdown
 
 overrides:
   - # Define the configuration for `.astro` file.
