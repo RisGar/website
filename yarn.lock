@@ -5752,15 +5752,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-astro@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "prettier-plugin-astro@npm:0.5.0"
+"prettier-plugin-astro@npm:^0.5.1":
+  version: 0.5.1
+  resolution: "prettier-plugin-astro@npm:0.5.1"
   dependencies:
     "@astrojs/compiler": ^0.19.0
     prettier: ^2.7.1
     sass-formatter: ^0.7.2
     synckit: ^0.7.0
-  checksum: 7d9c41f3db1e6bacd1be0efca3d202c3f98829c56f71a60b6df42a9b421ddf00eaa83754aebc74fbc812f41bd8657944ce6c258b873741130098aa92e9e29405
+  checksum: fe09b65e7015425b65822e892cc973cb1f10205c5eec05ab1e03ab6313007bc04d0aa717f21e03ad323ae7d80c2dd7a6888b8db1943a986caebb9489a2cf4617
   languageName: node
   linkType: hard
 
@@ -7619,7 +7619,7 @@ __metadata:
     husky: ^8.0.1
     postcss-nested: ^5.0.6
     prettier: ^2.7.1
-    prettier-plugin-astro: ^0.5.0
+    prettier-plugin-astro: ^0.5.1
     sass: ^1.54.5
     svelte: ^3.49.0
   languageName: unknown

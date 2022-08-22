@@ -1,7 +1,6 @@
 ---
-import MainHead from "../components/MainHead.astro"
-import Footer from "../components/Footer.svelte"
 import PortfolioPreview from "../components/PortfolioPreview.svelte"
+import Page from "../layouts/page.astro"
 
 const projects = (await Astro.glob<Frontmatter>("./project/**/*.mdx"))
   .filter(
@@ -14,18 +13,9 @@ const projects = (await Astro.glob<Frontmatter>("./project/**/*.mdx"))
   )
 ---
 
-<html lang="en">
-  <head>
-    <MainHead title="All Projects | Rishab Garg" description="My portfolio" />
-  </head>
-
-  <body>
-    <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
-      <h1 class="text-4xl mb-8">All Projects</h1>
-      <div class="grid gap-12 xl:grid-cols-2">
-        {projects.map((p) => <PortfolioPreview project={p} />)}
-      </div>
-    </div>
-    <Footer />
-  </body>
-</html>
+<Page title="All Projects | Rishab Garg" description="My portfolio">
+  <h1 class="text-4xl mb-6">All Projects</h1>
+  <div class="grid gap-12 xl:grid-cols-2">
+    {projects.map((p) => <PortfolioPreview project={p} />)}
+  </div>
+</Page>

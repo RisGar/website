@@ -3,11 +3,7 @@
   <small
     class="uppercase block m-2 transition hover:text-magenta focus:text-magenta"
   >
-    <a
-      href="https://astro.build/"
-      target="_blank"
-      rel="nofollow"
-      data-spa-ignore
+    <a href="https://astro.build/" target="_blank" rel="nofollow"
       >🚀 Built with Astro
     </a>
   </small>

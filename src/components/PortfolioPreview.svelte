@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { MDXInstance } from "astro"
+  import type { MDXInstance } from "astro"
 
   export let project: MDXInstance<Frontmatter>
   const { frontmatter } = project

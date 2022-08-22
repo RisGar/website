@@ -1,11 +1,12 @@
 ---
 import tags from "../../components/tags"
-import MainHead from "../../components/MainHead.astro"
-import Footer from "../../components/Footer.svelte"
 import PortfolioPreview from "../../components/PortfolioPreview.svelte"
+import Page from "../../layouts/page.astro"
+
+type path = { params: { tag: string } }
 
 export const getStaticPaths = () => {
-  let paths = []
+  let paths: path[] = []
   tags.forEach((t) => {
     paths.push({ params: { tag: t } })
   })
@@ -27,27 +28,18 @@ const projects = (await Astro.glob<Frontmatter>("../project/**/*.mdx"))
   )
 ---
 
-<html lang="en">
-  <head>
-    <MainHead
-      title={'All "' + tag + '" projects | Rishab Garg'}
-      description={"My portfolio filtered by tags"}
-    />
-  </head>
-
-  <body>
-    <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
-      <h1 class="text-4xl mb-8">
-        All
-        <span class="text-dark-yellow">
-          {tag}
-        </span>
-        projects
-      </h1>
-      <div class="grid gap-12 xl:grid-cols-2">
-        {projects.map((p) => <PortfolioPreview project={p} />)}
-      </div>
-    </div>
-    <Footer />
-  </body>
-</html>
+<Page
+  title={'All "' + tag + '" projects | Rishab Garg'}
+  description={"My portfolio filtered by tags"}
+>
+  <h1 class="text-4xl mb-6">
+    All
+    <span class="text-dark-yellow">
+      {tag}
+    </span>
+    projects
+  </h1>
+  <div class="grid gap-12 xl:grid-cols-2">
+    {projects.map((p) => <PortfolioPreview project={p} />)}
+  </div>
+</Page>

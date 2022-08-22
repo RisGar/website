@@ -27,7 +27,7 @@
     "husky": "^8.0.1",
     "postcss-nested": "^5.0.6",
     "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.5.0",
+    "prettier-plugin-astro": "^0.5.1",
     "sass": "^1.54.5",
     "svelte": "^3.49.0"
   },

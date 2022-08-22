@@ -31,7 +31,6 @@
     href="https://rishab-garg.medium.com/"
     target="_blank"
     rel="nofollow"
-    data-spa-ignore
   >
     Blog
   </a>
@@ -40,7 +39,6 @@
     href="https://twitter.com/rishab_grg"
     target="_blank"
     rel="nofollow"
-    data-spa-ignore
   >
     <Twitter />
   </a>
@@ -49,7 +47,6 @@
     href="https://github.com/RisGar"
     target="_blank"
     rel="nofollow"
-    data-spa-ignore
   >
     <GitHub />
   </a>
@@ -58,7 +55,6 @@
     href="https://www.linkedin.com/in/rishab-grg/"
     target="_blank"
     rel="nofollow"
-    data-spa-ignore
   >
     <LinkedIn />
   </a>

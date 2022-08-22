@@ -1,9 +1,8 @@
 ---
 // Component Imports
-import MainHead from "../components/MainHead.astro"
 import Button from "../components/Button.svelte"
-import Footer from "../components/Footer.svelte"
 import PortfolioPreview from "../components/PortfolioPreview.svelte"
+import Page from "../layouts/page.astro"
 
 const project = (await Astro.glob<Frontmatter>("./project/**/*.mdx"))
   .filter(
@@ -19,56 +18,45 @@ const project = (await Astro.glob<Frontmatter>("./project/**/*.mdx"))
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<html lang="en">
-  <head>
-    <MainHead />
-  </head>
-
-  <body>
-    <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
-      <header class="relative overflow-hidden">
-        <h1 class="font-medium mb-6 text-4xl">Rishab Garg</h1>
-        <div>
-          <span
-            class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded md:text-lg"
-            >👩‍💻 Developer
-          </span>
-          <span
-            class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded ml-2 md:text-lg"
-            >🎓 Student
-          </span>
-          <p class="text-xl mt-6 mb-0">
-            Hobby progammer and high school student
-          </p>
-        </div>
-      </header>
-
-      <main class="mt-6 mb-8">
-        <div class="grid gap-x-20 lg:grid-cols-2">
-          <div class="section">
-            <h2 class="font-medium text-3xl mt-16 mb-8">Latest Project</h2>
-            <PortfolioPreview project={project} />
-            <div class="mt-8 text-center lg:text-left">
-              <a href="/projects">
-                <Button>View All</Button>
-              </a>
-            </div>
-          </div>
-          <div class="section">
-            <h2 class="font-medium text-3xl mt-16 mb-8">About me</h2>
-            <p class="leading-loose mb-4 text-lg">
-              Hello! <br />
-              I'm Rishab, and this is my website. (WIP)
-            </p>
-            <div class="mt-8 text-center lg:text-left">
-              <a href="/about">
-                <Button>Read more</Button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </main>
+<Page>
+  <header class="relative overflow-hidden">
+    <h1 class="font-medium mb-6 text-4xl">Rishab Garg</h1>
+    <div>
+      <span
+        class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded md:text-lg"
+        >👩‍💻 Developer
+      </span>
+      <span
+        class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded ml-2 md:text-lg"
+        >🎓 Student
+      </span>
+      <p class="text-xl mt-6 mb-0">Hobby progammer and high school student</p>
     </div>
-    <Footer />
-  </body>
-</html>
+  </header>
+
+  <main class="my-6">
+    <div class="grid gap-x-20 lg:grid-cols-2">
+      <div class="section">
+        <h2 class="font-medium text-3xl mt-16 mb-8">Latest Project</h2>
+        <PortfolioPreview project={project} />
+        <div class="mt-8 text-center lg:text-left">
+          <a href="/projects">
+            <Button>View All</Button>
+          </a>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="font-medium text-3xl mt-16 mb-8">About me</h2>
+        <p class="leading-loose mb-4 text-lg">
+          Hello! <br />
+          I'm Rishab, and this is my website. (WIP)
+        </p>
+        <div class="mt-8 text-center lg:text-left">
+          <a href="/about">
+            <Button>Read more</Button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</Page>
