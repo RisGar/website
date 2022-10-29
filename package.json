@@ -31,5 +31,8 @@
     "sass": "^1.55.0",
     "svelte": "^3.46.4"
   },
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "yarn@3.2.1",
+  "dependencies": {
+    "tailwindcss": "^3.0.24"
+  }
 }
