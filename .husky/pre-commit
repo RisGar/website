@@ -1,6 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# Remove checking until bugs are gone
-# yarn astro check
-# tsc --noEmit
+yarn check

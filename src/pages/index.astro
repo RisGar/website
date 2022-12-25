@@ -38,7 +38,7 @@ const project = (await Astro.glob<Frontmatter>("./project/**/*.mdx"))
     <div class="grid gap-x-20 lg:grid-cols-2">
       <div class="section">
         <h2 class="font-medium text-3xl mt-16 mb-8">Latest Project</h2>
-        <PortfolioPreview project={project} />
+        <PortfolioPreview client:only project={project} />
         <div class="mt-8 text-center lg:text-left">
           <a href="/projects">
             <Button>View All</Button>

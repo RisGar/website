@@ -30,7 +30,7 @@
     class="transition hover:text-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
     href="https://rishab-garg.medium.com/"
     target="_blank"
-    rel="nofollow"
+    rel="noreferrer"
   >
     Blog
   </a>
@@ -38,7 +38,7 @@
     class="transition fill-white hover:fill-magenta focus:fill-magenta ml-auto"
     href="https://twitter.com/rishab_grg"
     target="_blank"
-    rel="nofollow"
+    rel="noreferrer"
   >
     <Twitter />
   </a>
@@ -46,7 +46,7 @@
     class="transition fill-white hover:fill-magenta focus:fill-magenta ml-3"
     href="https://github.com/RisGar"
     target="_blank"
-    rel="nofollow"
+    rel="noreferrer"
   >
     <GitHub />
   </a>
@@ -54,7 +54,7 @@
     class="transition fill-white hover:fill-magenta focus:fill-magenta ml-3"
     href="https://www.linkedin.com/in/rishab-grg/"
     target="_blank"
-    rel="nofollow"
+    rel="noreferrer"
   >
     <LinkedIn />
   </a>
