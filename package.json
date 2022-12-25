@@ -26,7 +26,7 @@
     "eslint-plugin-astro": "^0.20.0",
     "husky": "^8.0.0",
     "postcss-nested": "^6.0.0",
-    "prettier": "^2.7.1",
+    "prettier": "2.8.1",
     "prettier-plugin-astro": "^0.7.0",
     "sass": "^1.55.0",
     "svelte": "^3.46.4",
