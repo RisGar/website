@@ -14,26 +14,21 @@
   >
     <Monogram />
   </a>
+
   <a
     class="transition hover:text-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
-    href="/projects"
+    href="https://blog.rishab-garg.me/"
   >
-    Projects
+    Blog
   </a>
+
   <a
     class="transition hover:text-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
     href="/about"
   >
     About
   </a>
-  <a
-    class="transition hover:text-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
-    href="https://rishab-garg.medium.com/"
-    target="_blank"
-    rel="noreferrer"
-  >
-    Blog
-  </a>
+
   <a
     class="transition fill-white hover:fill-magenta focus:fill-magenta ml-auto"
     href="https://twitter.com/rishab_grg"
@@ -42,6 +37,7 @@
   >
     <Twitter />
   </a>
+
   <a
     class="transition fill-white hover:fill-magenta focus:fill-magenta ml-3"
     href="https://github.com/RisGar"
@@ -50,6 +46,7 @@
   >
     <GitHub />
   </a>
+
   <a
     class="transition fill-white hover:fill-magenta focus:fill-magenta ml-3"
     href="https://www.linkedin.com/in/rishab-grg/"
