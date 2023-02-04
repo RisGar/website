@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content"
+
+import Page from "../../../layouts/page.astro"
+
+import PortfolioPreview from "../../../components/PortfolioPreview.astro"
+
+export async function getStaticPaths() {
+  const projects = (await getCollection("work"))
+    .filter((e) => e.data.tags)
+    .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+
+  let tags: string[] = []
+
+  projects.map((p) => {
+    p.data.tags.map((tag) => tags.push(tag.toLowerCase()))
+  })
+  return tags.map((t) => ({
+    params: { tag: t },
+    props: { t },
+  }))
+}
+
+const { tag } = Astro.params
+
+const projects = (await getCollection("work"))
+  .filter((e) => e.data.tags.includes(tag!))
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+---
+
+<Page title="All Projects | Rishab Garg" description="My portfolio">
+  <h1 class="text-4xl mb-6">All Projects</h1>
+  <div class="grid gap-12 xl:grid-cols-2">
+    {projects.map((p) => <PortfolioPreview project={p} />)}
+  </div>
+</Page>

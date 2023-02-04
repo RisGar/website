@@ -1,7 +1,16 @@
 ---
+import { getCollection } from "astro:content"
+
+// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+import Page from "../layouts/page.astro"
+
 // Component Imports
 import Button from "../components/Button.svelte"
-import Page from "../layouts/page.astro"
+import PortfolioPreview from "../components/PortfolioPreview.astro"
+
+const project = (await getCollection("work")).sort(
+  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+)[0]
 ---
 
 <Page>
@@ -23,10 +32,29 @@ import Page from "../layouts/page.astro"
   </header>
 
   <main class="my-6">
-    <div class="mt-8 text-center">
-      <a href="/projects">
-        <Button>View All</Button>
-      </a>
+    <div class="grid gap-x-20 lg:grid-cols-2">
+      <div class="section">
+        <h2 class="font-medium text-3xl mt-16 mb-8">Latest Project</h2>
+        <PortfolioPreview project={project} />
+        <div class="mt-8 text-center lg:text-left">
+          <a href="/work">
+            <Button>View All</Button>
+          </a>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="font-medium text-3xl mt-16 mb-8">About me</h2>
+        <p class="leading-loose mb-4 text-lg">
+          Hello! <br />
+          My name is Rishab Garg and I am a student in sixth form doing my A-levels
+          in Germany. I am a hobby programmer and am focussing on web-based and machine
+          learning projects right now.
+        </p><div class="mt-8 text-center lg:text-left">
+          <a href="/about">
+            <Button>Read more</Button>
+          </a>
+        </div>
+      </div>
     </div>
   </main>
 </Page>

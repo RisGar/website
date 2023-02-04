@@ -1,0 +1,55 @@
+---
+import { CollectionEntry, getCollection } from "astro:content"
+
+import Page from "../../layouts/page.astro"
+
+import Button from "../../components/Button.svelte"
+import Tag from "../../components/Tag.svelte"
+
+interface Props {
+  entry: CollectionEntry<"work">
+}
+
+export async function getStaticPaths() {
+  const work = await getCollection("work")
+  return work.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await entry.render()
+---
+
+<Page
+  title={entry.data.title + " | Rishab Garg"}
+  description={entry.data.description}
+>
+  <header
+    style={`background-image:url(${entry.data.img})`}
+    class="p-32 flex bg-no-repeat bg-cover min-h-[30vh] flex-col items-center justify-center bg-transparent bg-center rounded-md"
+  >
+    <h1
+      class="text-[#fff] text-6xl font-extrabold uppercase tracking-wider py-4 px-8 bg-gutter-grey bg-opacity-60 backdrop-blur rounded-md"
+    >
+      {entry.data.title}
+    </h1>
+  </header>
+
+  <div class="wrapper pt-16 pb-14 text-center">
+    {entry.data.tags.map((t: string) => <Tag tag={t} />)}
+
+    <h3 class="font-light text-xl mt-6">{entry.data.description}</h3>
+  </div>
+
+  <div class="leading-loose">
+    <Content />
+  </div>
+
+  <footer class="text-center mt-8">
+    <a href="/work">
+      <Button>More Projects</Button>
+    </a>
+  </footer>
+</Page>
