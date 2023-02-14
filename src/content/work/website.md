@@ -1,7 +1,7 @@
 ---
 title: Personal Website
 publishDate: 2019-10-02 00:00:00
-img: https://source.unsplash.com/feXpdV001o4
+img: assets/summary_large_image.png
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 description: |
   My personal website.

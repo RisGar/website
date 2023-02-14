@@ -9,29 +9,32 @@
   class="nav flex items-center py-6 lg:max-w-[50vw] md:max-w-[70vw] max-w-[90vw] mx-auto"
 >
   <a
-    class="flex transition fill-dark-yellow hover:text-magenta focus:text-magenta hover:underline focus:underline underline-offset-4 m-2 text-lg"
+    class="transition fill-dark-yellow hover:fill-magenta focus:fill-magenta m-2 text-lg"
     href="/"
+    rel="prefetch"
   >
     <Monogram />
   </a>
 
   <a
-    class="transition hover:text-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
+    class="transition hover:text-magenta focus:text-magenta m-2 block text-lg"
+    href="/work"
+    rel="prefetch"
+  >
+    Work
+  </a>
+
+  <a
+    class="transition hover:text-magenta focus:text-magenta m-2 block text-lg"
     href="https://blog.rishab-garg.me/"
   >
     Blog
   </a>
 
   <a
-    class="transition hover:text-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
-    href="/work"
-  >
-    Work
-  </a>
-
-  <a
-    class="transition hover:text-magenta focus:text-magenta hover:underline  underline-offset-4 m-2 block text-lg"
+    class="transition hover:text-magenta focus:text-magenta m-2 block text-lg"
     href="/about"
+    rel="prefetch"
   >
     About
   </a>

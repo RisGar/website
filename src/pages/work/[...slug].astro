@@ -28,10 +28,10 @@ const { Content } = await entry.render()
 >
   <header
     style={`background-image:url(${entry.data.img})`}
-    class="p-32 flex bg-no-repeat bg-cover min-h-[30vh] flex-col items-center justify-center bg-transparent bg-center rounded-md"
+    class="p-32 flex bg-no-repeat bg-cover min-h-[30vh] flex-col items-center justify-center bg-transparent bg-center rounded-lg"
   >
     <h1
-      class="text-[#fff] text-6xl font-extrabold uppercase tracking-wider py-4 px-8 bg-gutter-grey bg-opacity-60 backdrop-blur rounded-md"
+      class="text-4xl font-extrabold py-4 px-8 bg-gutter-grey bg-opacity-60 backdrop-blur rounded-lg"
     >
       {entry.data.title}
     </h1>
@@ -40,16 +40,18 @@ const { Content } = await entry.render()
   <div class="wrapper pt-16 pb-14 text-center">
     {entry.data.tags.map((t: string) => <Tag tag={t} />)}
 
-    <h3 class="font-light text-xl mt-6">{entry.data.description}</h3>
+    <h3 class="text-xl font-normal mt-6">
+      {entry.data.description}
+    </h3>
   </div>
 
-  <div class="leading-loose">
+  <div class="leading-loose prose prose-lg max-w-none text-white">
     <Content />
   </div>
 
-  <footer class="text-center mt-8">
-    <a href="/work">
+  <div class="text-center mt-8">
+    <a href="/work" rel="prefetch">
       <Button>More Projects</Button>
     </a>
-  </footer>
+  </div>
 </Page>

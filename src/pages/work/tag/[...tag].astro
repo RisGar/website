@@ -28,8 +28,14 @@ const projects = (await getCollection("work"))
   .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 ---
 
-<Page title="All Projects | Rishab Garg" description="My portfolio">
-  <h1 class="text-4xl mb-6">All Projects</h1>
+<Page
+  title={"All Projects - " + tag + " | Rishab Garg"}
+  description="My portfolio"
+>
+  <h1 class="text-4xl mb-6 font-extrabold">
+    All Projects
+    <small class="ml-1 font-medium text-white">{tag}</small>
+  </h1>
   <div class="grid gap-12 xl:grid-cols-2">
     {projects.map((p) => <PortfolioPreview project={p} />)}
   </div>

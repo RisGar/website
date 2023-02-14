@@ -17,27 +17,27 @@ const { data, slug } = Astro.props.project
     decoding="async"
   />
 </a> -->
-<a href={`/work/${slug}`}>
-  <div class="relative border-2 border-solid border-white rounded-md">
+<a href={`/work/${slug}`} rel="prefetch">
+  <div
+    class="relative transition border-2 border-solid border-white rounded-lg hover:bg-white hover:bg-opacity-5"
+  >
     <div
       class="relative bg-cover pt-[37.5%] bg-center"
       style={`background-image:url(${data.img});`}
     >
-      <h3
-        class="absolute top-0 w-full h-full flex items-center justify-center text-[#fff] flex-col m-0 xl:text-3xl md:text-2xl text-xl uppercase font-black tracking-wider"
+      <h1
+        class="absolute top-0 w-full h-full flex items-center justify-center flex-col m-0 text-2xl font-extrabold"
       >
         {data.title}
-      </h3>
+      </h1>
     </div>
     <div class="p-6">
       <p class="mt-0 mb-4 text-lg text-center">{data.description}</p>
-      <div
-        class="text-center text-sm font-bold lowercase tracking-wider text-dark-yellow"
-      >
+      <div class="text-center text-sm font-bold lowercase text-dark-yellow">
         {
           data.tags.map((t: string) => (
             <div
-              class="mr-2 py-1 px-2 bg-gutter-grey rounded inline-block"
+              class="mr-2 py-1 px-2 bg-gutter-grey rounded-lg inline-block"
               data-tag={t}
             >
               {t}

@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
   theme: {
     colors: {
@@ -18,6 +18,22 @@ export default {
       "gutter-grey": "#4b5263",
       "comment-grey": "#5c6370",
     },
+    fontFamily: {
+      sans: [
+        "Inter",
+        "ui-sans-serif",
+        "system-ui",
+        "Segoe UI",
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        "sans-serif",
+      ],
+    },
     transitionDuration: {
       DEFAULT: "200ms",
     },
@@ -25,4 +41,5 @@ export default {
       DEFAULT: "linear",
     },
   },
+  plugins: [require("@tailwindcss/typography")],
 }

@@ -25,7 +25,8 @@
       "@components/*": ["./src/components/*"],
       "@layouts/*": ["./src/layouts/*"],
       "~/*": ["./src/*"]
-    }
+    },
+    "types": ["@astrojs/image/client"]
   },
   "include": ["src/**/*", "src/*"],
   "exclude": ["node_modules/**"]

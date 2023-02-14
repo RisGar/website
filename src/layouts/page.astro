@@ -57,13 +57,16 @@ const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
       rel="stylesheet"
     />
   </head>
+
   <body>
     <Nav />
 
     <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
       <slot />
     </div>
-
-    <Footer />
   </body>
+
+  <footer>
+    <Footer />
+  </footer>
 </html>

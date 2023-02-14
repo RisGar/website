@@ -1,3 +1,3 @@
-<footer class="text-center absolute bottom-4 inset-x-0 h-12">
+<span class="text-center absolute bottom-4 inset-x-0 h-12">
   &copy; {new Date().getFullYear()} Rishab Garg
-</footer>
+</span>

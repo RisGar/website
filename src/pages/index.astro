@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content"
 
-// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import Page from "../layouts/page.astro"
 
 // Component Imports
@@ -15,16 +14,10 @@ const project = (await getCollection("work")).sort(
 
 <Page>
   <header class="relative overflow-hidden">
-    <h1 class="font-medium mb-6 text-4xl">Rishab Garg</h1>
+    <h1 class="mb-6 text-4xl font-extrabold">Rishab Garg</h1>
     <div>
-      <span
-        class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded md:text-lg"
-        >👩‍💻 Developer
-      </span>
-      <span
-        class="relative inline-block font-bold text-dark-yellow bg-gutter-grey py-1 px-2 rounded ml-2 md:text-lg"
-        >🎓 Student
-      </span>
+      <span class="tag-card">👩‍💻 Developer</span>
+      <span class="tag-card ml-2">🎓 Student</span>
       <p class="leading-loose text-xl mt-6 mb-0">
         Hobby programmer focussing on web-based and machine learning projects
       </p>
@@ -37,7 +30,7 @@ const project = (await getCollection("work")).sort(
         <h2 class="font-medium text-3xl mt-16 mb-8">Latest Project</h2>
         <PortfolioPreview project={project} />
         <div class="mt-8 text-center lg:text-left">
-          <a href="/work">
+          <a href="/work" rel="prefetch">
             <Button>View All</Button>
           </a>
         </div>
@@ -50,7 +43,7 @@ const project = (await getCollection("work")).sort(
           in Germany. I am a hobby programmer and am focussing on web-based and machine
           learning projects right now.
         </p><div class="mt-8 text-center lg:text-left">
-          <a href="/about">
+          <a href="/about" rel="prefetch">
             <Button>Read more</Button>
           </a>
         </div>
