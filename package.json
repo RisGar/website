@@ -21,6 +21,7 @@
     "@astrojs/tailwind": "^3.0.1",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "@fontsource/inter": "^4.5.15",
     "@types/eslint": "^8.21.0",
     "@typescript-eslint/parser": "^5.50.0",
     "astro": "^2.0.7",

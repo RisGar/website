@@ -1,8 +1,6 @@
 # My personal website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a12e301f-6626-4a51-a891-6de21c5a0e2f/deploy-status)](https://app.netlify.com/sites/rishab-garg/deploys)
-
-## 🧞 Commands
+### Commands
 
 All commands are run from the root of the project, from a terminal:
 
