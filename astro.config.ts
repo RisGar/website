@@ -3,7 +3,6 @@ import svelte from "@astrojs/svelte"
 import tailwind from "@astrojs/tailwind"
 import robotsTxt from "astro-robots-txt"
 import sitemap from "@astrojs/sitemap"
-import image from "@astrojs/image"
 import prefetch from "@astrojs/prefetch"
 import serviceWorker from "astrojs-service-worker"
 import mdx from "@astrojs/mdx"
@@ -19,9 +18,6 @@ export default defineConfig({
     }),
     robotsTxt(),
     sitemap(),
-    image({
-      serviceEntryPoint: "@astrojs/image/sharp",
-    }),
     prefetch({
       throttle: 5,
     }),

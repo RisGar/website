@@ -1,7 +1,7 @@
 ---
 title: Personal Website
 publishDate: 2020-10-02 00:00:00
-img: ../assets/website.jpg
+img: assets/website.jpg
 img_alt: Gaming keyboard with purple lighting on the keycaps.
 description: |
   My personal website 2.
