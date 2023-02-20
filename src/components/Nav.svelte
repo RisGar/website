@@ -12,6 +12,7 @@
     class="transition fill-dark-yellow hover:fill-magenta focus:fill-magenta m-2 text-lg"
     href="/"
     rel="prefetch"
+    aria-label="Home"
   >
     <Monogram />
   </a>
@@ -44,6 +45,7 @@
     href="https://twitter.com/rishab_grg"
     target="_blank"
     rel="noreferrer"
+    aria-label="Twitter"
   >
     <Twitter />
   </a>
@@ -53,6 +55,7 @@
     href="https://github.com/RisGar"
     target="_blank"
     rel="noreferrer"
+    aria-label="GitHub"
   >
     <GitHub />
   </a>
@@ -62,6 +65,7 @@
     href="https://www.linkedin.com/in/rishab-grg/"
     target="_blank"
     rel="noreferrer"
+    aria-label="LinkedIn"
   >
     <LinkedIn />
   </a>

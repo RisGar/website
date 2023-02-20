@@ -22,6 +22,7 @@ overrides:
   - # Define the configuration for `.md` file.
     files:
       - "*.md"
+      - "*.mdx"
     # Allows Astro Markdown pages to be parsed.
     parser: "astro-eslint-parser"
     # Parse the script in `.md` as TypeScript by adding the following configuration.
@@ -30,6 +31,7 @@ overrides:
       parser: "@typescript-eslint/parser"
       extraFileExtensions:
         - ".md"
+        - ".mdx"
     # rules:
     # override/add rules settings here, such as:
     # "astro/no-set-html-directive": "error"
