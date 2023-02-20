@@ -26,7 +26,7 @@
       "@layouts/*": ["./src/layouts/*"],
       "~/*": ["./src/*"]
     },
-    "types": ["@astrojs/image/client"]
+    "types": ["astro/client"]
   },
   "include": ["src/**/*", "src/*"],
   "exclude": ["node_modules/**"]
