@@ -11,7 +11,10 @@ const projects = (await getCollection("work")).sort(
 ---
 
 <Page title="All Projects | Rishab Garg" description="My portfolio">
-  <h1 class="text-4xl mb-6 font-extrabold">All Projects</h1>
+  <header class="relative overflow-hidden">
+    <h1 class="text-4xl mb-6 font-extrabold">All Projects</h1>
+  </header>
+
   <div class="grid gap-12 xl:grid-cols-2">
     {projects.map((p) => <PortfolioPreview project={p} />)}
   </div>

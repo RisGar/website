@@ -1,7 +1,7 @@
 ---
 import Nav from "../components/Nav.svelte"
 import Footer from "../components/Footer.svelte"
-import { metadata } from "../defaults"
+import { metadata } from "../defaults.js"
 
 import "../styles/global.scss"
 
@@ -28,7 +28,7 @@ const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Website| Rishab Garg" />
-    <meta property="og:image" content="/icons/summary_large_image.png" />
+    <meta property="og:image" content="summary_large_image.png" />
     <meta property="og:description" name="description" content={description} />
     <meta property="og:url" content="https://rishab-garg.me/" />
 
@@ -36,7 +36,7 @@ const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
     <meta name="twitter:title" content={title} />
     <meta name="twitter:creator" content="@rishab_garg" />
     <meta name="twitter:site" content="@rishab_garg" />
-    <meta name="twitter:image" content="/icons/summary_large_image.png" />
+    <meta name="twitter:image" content="summary_large_image.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 

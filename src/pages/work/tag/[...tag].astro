@@ -13,7 +13,7 @@ export async function getStaticPaths() {
   let tags: string[] = []
 
   projects.map((p) => {
-    p.data.tags.map((tag) => tags.push(tag.toLowerCase()))
+    p.data.tags.map((tag: string) => tags.push(tag.toLowerCase()))
   })
   return tags.map((t) => ({
     params: { tag: t },

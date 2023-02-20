@@ -1,12 +1,11 @@
 ---
 title: Personal Website
-publishDate: 2019-10-02 00:00:00
-img: assets/summary_large_image.png
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+publishDate: 2020-10-02 00:00:00
+img: ../assets/website.jpg
+img_alt: Gaming keyboard with purple lighting on the keycaps.
 description: |
-  My personal website.
+  My personal website 2.
 tags:
-  - design
   - dev
 ---
 

@@ -6,6 +6,8 @@ import Page from "../../layouts/page.astro"
 import Button from "../../components/Button.svelte"
 import Tag from "../../components/Tag.svelte"
 
+import { getImage } from "@astrojs/image"
+
 interface Props {
   entry: CollectionEntry<"work">
 }
@@ -20,6 +22,11 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props
 const { Content } = await entry.render()
+
+const { src } = await getImage({
+  src: import("../../" + entry.data.img),
+  alt: entry.data.img_alt,
+})
 ---
 
 <Page
@@ -27,12 +34,10 @@ const { Content } = await entry.render()
   description={entry.data.description}
 >
   <header
-    style={`background-image:url(${entry.data.img})`}
-    class="p-32 flex bg-no-repeat bg-cover min-h-[30vh] flex-col items-center justify-center bg-transparent bg-center rounded-lg"
+    style={`background-image:url(${src})`}
+    class="relative overflow-hidden p-32 flex bg-no-repeat bg-cover min-h-[30vh] flex-col items-center justify-center bg-transparent bg-center rounded-lg"
   >
-    <h1
-      class="text-4xl font-extrabold py-4 px-8 bg-gutter-grey bg-opacity-60 backdrop-blur rounded-lg"
-    >
+    <h1 class="text-4xl font-extrabold py-4 px-8 absolute">
       {entry.data.title}
     </h1>
   </header>
