@@ -1,12 +1,31 @@
 # My personal website
 
-### Commands
+My personal portfolio website built using the Astro framework and Svelte components.
 
-All commands are run from the root of the project, from a terminal:
+## Installation
 
-| Command        | Action                                       |
-| :------------- | :------------------------------------------- |
-| `yarn`         | Installs dependencies                        |
-| `yarn dev`     | Starts local dev server at `localhost:3000`  |
-| `yarn build`   | Build your production site to `./dist/`      |
-| `yarn preview` | Preview your build locally, before deploying |
+Install dependencies
+
+```bash
+  yarn ci
+```
+
+## Commands
+
+To run the dev server locally at `localhost:3000`
+
+```bash
+  yarn dev
+```
+
+To build your production site to `./dist/`
+
+```bash
+  yarn build
+```
+
+To preview your build locally before deploying
+
+```bash
+  yarn preview
+```
