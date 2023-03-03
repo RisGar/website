@@ -19,10 +19,10 @@
 
   <a
     class="transition hover:text-magenta focus:text-magenta m-2 block text-lg"
-    href="/work"
+    href="/projects"
     rel="prefetch"
   >
-    Work
+    Projects
   </a>
 
   <a

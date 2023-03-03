@@ -7,7 +7,7 @@ import Page from "../layouts/page.astro"
 import Button from "../components/Button.svelte"
 import PortfolioPreview from "../components/PortfolioPreview.astro"
 
-const project = (await getCollection("work")).sort(
+const project = (await getCollection("projects")).sort(
   (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 )[0]
 ---
@@ -30,7 +30,7 @@ const project = (await getCollection("work")).sort(
         <h2 class="font-medium text-3xl mt-16 mb-8">Latest Project</h2>
         <PortfolioPreview project={project} />
         <div class="mt-8 text-center lg:text-left">
-          <a href="/work" rel="prefetch">
+          <a href="/projects" rel="prefetch">
             <Button>View All</Button>
           </a>
         </div>

@@ -7,12 +7,12 @@ import Button from "../../components/Button.svelte"
 import Tag from "../../components/Tag.svelte"
 
 interface Props {
-  entry: CollectionEntry<"work">
+  entry: CollectionEntry<"projects">
 }
 
 export async function getStaticPaths() {
-  const work = await getCollection("work")
-  return work.map((entry) => ({
+  const projects = await getCollection("projects")
+  return projects.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
   }))
@@ -48,7 +48,7 @@ const { Content } = await entry.render()
   </div>
 
   <div class="text-center mt-8">
-    <a href="/work" rel="prefetch">
+    <a href="/projects" rel="prefetch">
       <Button>More Projects</Button>
     </a>
   </div>
