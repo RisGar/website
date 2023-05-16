@@ -1,9 +1,9 @@
 ---
 import { getCollection } from "astro:content"
 
-import Page from "../layouts/page.astro"
+import Page from "@layouts/page.astro"
 
-import PortfolioPreview from "../components/PortfolioPreview.astro"
+import PortfolioPreview from "@components/PortfolioPreview.astro"
 
 const projects = (await getCollection("projects")).sort(
   (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()

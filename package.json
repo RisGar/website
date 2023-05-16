@@ -18,6 +18,7 @@
     "@astrojs/sitemap": "^1.2.2",
     "@astrojs/svelte": "^2.1.0",
     "@astrojs/tailwind": "^3.1.1",
+    "@astrojs/ts-plugin": "^0.4.4",
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
     "@fontsource/inter": "^4.5.15",

@@ -16,17 +16,21 @@
     "strict": true,
     // Astro content collections
     "strictNullChecks": true,
-    // Error when a value import is only used as a type.
-    "importsNotUsedAsValues": "error",
     // Tell TypeScript where your build output is
     "outDir": "./dist",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["./src/components/*"],
-      "@layouts/*": ["./src/layouts/*"],
-      "~/*": ["./src/*"]
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "~/*": ["src/*"]
     },
-    "types": ["astro/client"]
+    "types": ["astro/client"],
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ],
+    "verbatimModuleSyntax": true
   },
   "include": ["src/**/*", "src/*"],
   "exclude": ["node_modules/**"]

@@ -7,20 +7,13 @@ import prefetch from "@astrojs/prefetch"
 import serviceWorker from "astrojs-service-worker"
 import mdx from "@astrojs/mdx"
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [
     svelte(),
-    tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
-    }),
+    tailwind({ config: { applyBaseStyles: false } }),
     robotsTxt(),
     sitemap(),
-    prefetch({
-      throttle: 5,
-    }),
+    prefetch({ throttle: 5 }),
     mdx(),
     serviceWorker(),
   ],
