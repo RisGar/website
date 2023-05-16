@@ -1,6 +1,7 @@
 <script>
   import GitHub from "./icons/GitHub.svelte"
   import LinkedIn from "./icons/LinkedIn.svelte"
+  import Mastodon from "./icons/Mastodon.svelte"
   import Monogram from "./icons/Monogram.svelte"
   import Twitter from "./icons/Twitter.svelte"
 </script>
@@ -44,7 +45,7 @@
     class="transition fill-white hover:fill-magenta focus:fill-magenta ml-auto"
     href="https://twitter.com/rishab_grg"
     target="_blank"
-    rel="noreferrer"
+    rel="me"
     aria-label="Twitter"
   >
     <Twitter />
@@ -52,9 +53,19 @@
 
   <a
     class="transition fill-white hover:fill-magenta focus:fill-magenta ml-3"
+    href="https://mastodon.social/@risgar"
+    target="_blank"
+    rel="me"
+    aria-label="Mastodon"
+  >
+    <Mastodon />
+  </a>
+
+  <a
+    class="transition fill-white hover:fill-magenta focus:fill-magenta ml-3"
     href="https://github.com/RisGar"
     target="_blank"
-    rel="noreferrer"
+    rel="me"
     aria-label="GitHub"
   >
     <GitHub />
@@ -64,7 +75,7 @@
     class="transition fill-white hover:fill-magenta focus:fill-magenta ml-3"
     href="https://www.linkedin.com/in/rishab-grg/"
     target="_blank"
-    rel="noreferrer"
+    rel="me"
     aria-label="LinkedIn"
   >
     <LinkedIn />
