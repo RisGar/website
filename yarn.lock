@@ -148,19 +148,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/svelte@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@astrojs/svelte@npm:2.1.0"
-  dependencies:
-    "@sveltejs/vite-plugin-svelte": ^2.0.2
-    svelte2tsx: ^0.5.11
-  peerDependencies:
-    astro: ^2.1.0
-    svelte: ^3.54.0
-  checksum: 911d95c3543bb1838ec048077a51758b654e77c8eec648d9a1bedb2dafd06118b6fd4e771c2cd6926f9e982721a561e46091de2d965612ff2c07caefe2367065
-  languageName: node
-  linkType: hard
-
 "@astrojs/tailwind@npm:^3.1.1":
   version: 3.1.1
   resolution: "@astrojs/tailwind@npm:3.1.1"
@@ -2441,23 +2428,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/vite-plugin-svelte@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "@sveltejs/vite-plugin-svelte@npm:2.0.2"
-  dependencies:
-    debug: ^4.3.4
-    deepmerge: ^4.2.2
-    kleur: ^4.1.5
-    magic-string: ^0.27.0
-    svelte-hmr: ^0.15.1
-    vitefu: ^0.2.3
-  peerDependencies:
-    svelte: ^3.54.0
-    vite: ^4.0.0
-  checksum: 6a223da864d74c4e6ea05881ee0cf79db8390953df6d506b79d2c37a365fe291e5a5bb330dcfb5366b61ee3915544fd37db3e134865085981342bab392a6a991
-  languageName: node
-  linkType: hard
-
 "@tailwindcss/typography@npm:^0.5.9":
   version: 0.5.9
   resolution: "@tailwindcss/typography@npm:0.5.9"
@@ -3950,13 +3920,6 @@ __metadata:
   dependencies:
     character-entities: ^2.0.0
   checksum: f4c71d3b93105f20076052f9cb1523a22a9c796b8296cd35eef1ca54239c78d182c136a848b83ff8da2071e3ae2b1d300bf29d00650a6d6e675438cc31b11d78
-  languageName: node
-  linkType: hard
-
-"dedent-js@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "dedent-js@npm:1.0.1"
-  checksum: 3a86f4b11176b387c0633b4b201aef884f9bc83eb9485bd1156c5d9b3984a58fd7686f8213b67212b714a1abf00279bef5cd4eea6a9a7f033e37ce33352af9a9
   languageName: node
   linkType: hard
 
@@ -6149,7 +6112,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kleur@npm:^4.0.3, kleur@npm:^4.1.4, kleur@npm:^4.1.5":
+"kleur@npm:^4.0.3, kleur@npm:^4.1.4":
   version: 4.1.5
   resolution: "kleur@npm:4.1.5"
   checksum: 1dc476e32741acf0b1b5b0627ffd0d722e342c1b0da14de3e8ae97821327ca08f9fb944542fb3c126d90ac5f27f9d804edbe7c585bf7d12ef495d115e0f22c12
@@ -6329,15 +6292,6 @@ __metadata:
   version: 3.0.1
   resolution: "longest-streak@npm:3.0.1"
   checksum: 3b59c4c04ce3c70f137e339c10d574026fa3a711c45dc0e69a63a2c0ac981e57f837e1d5b64b991eee5234c4fa46fa10886a20626fb739ed3b04b77bcf6d14a8
-  languageName: node
-  linkType: hard
-
-"lower-case@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "lower-case@npm:2.0.2"
-  dependencies:
-    tslib: ^2.0.3
-  checksum: 83a0a5f159ad7614bee8bf976b96275f3954335a84fad2696927f609ddae902802c4f3312d86668722e668bef41400254807e1d3a7f2e8c3eede79691aa1f010
   languageName: node
   linkType: hard
 
@@ -7397,16 +7351,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"no-case@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "no-case@npm:3.0.4"
-  dependencies:
-    lower-case: ^2.0.2
-    tslib: ^2.0.3
-  checksum: 0b2ebc113dfcf737d48dde49cfebf3ad2d82a8c3188e7100c6f375e30eafbef9e9124aadc3becef237b042fd5eb0aad2fd78669c20972d045bbe7fea8ba0be5c
-  languageName: node
-  linkType: hard
-
 "node-gyp@npm:latest":
   version: 9.1.0
   resolution: "node-gyp@npm:9.1.0"
@@ -7733,16 +7677,6 @@ __metadata:
   version: 6.0.1
   resolution: "parse5@npm:6.0.1"
   checksum: 7d569a176c5460897f7c8f3377eff640d54132b9be51ae8a8fa4979af940830b2b0c296ce75e5bd8f4041520aadde13170dbdec44889975f906098ea0002f4bd
-  languageName: node
-  linkType: hard
-
-"pascal-case@npm:^3.1.1":
-  version: 3.1.2
-  resolution: "pascal-case@npm:3.1.2"
-  dependencies:
-    no-case: ^3.0.4
-    tslib: ^2.0.3
-  checksum: ba98bfd595fc91ef3d30f4243b1aee2f6ec41c53b4546bfa3039487c367abaa182471dcfc830a1f9e1a0df00c14a370514fa2b3a1aacc68b15a460c31116873e
   languageName: node
   linkType: hard
 
@@ -9195,35 +9129,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-hmr@npm:^0.15.1":
-  version: 0.15.1
-  resolution: "svelte-hmr@npm:0.15.1"
-  peerDependencies:
-    svelte: ">=3.19.0"
-  checksum: af2e5c356ed6467d6567ce1b908bc077c9d08a89f3ffda81e63989c1c3f374a88b1b67453e86e3674320aa10e7cdf42a10dc551900997b627b4702db447f2bf3
-  languageName: node
-  linkType: hard
-
-"svelte2tsx@npm:^0.5.11":
-  version: 0.5.14
-  resolution: "svelte2tsx@npm:0.5.14"
-  dependencies:
-    dedent-js: ^1.0.1
-    pascal-case: ^3.1.1
-  peerDependencies:
-    svelte: ^3.24
-    typescript: ^4.1.2
-  checksum: 08f68be97cfef9af8ee1a0e837fb15246720c6d5adb01f657184f31767f094629be2e5fe15ba2779e43a2994218e2db71665557e456ca01b19fe5d58a6095dae
-  languageName: node
-  linkType: hard
-
-"svelte@npm:^3.58.0":
-  version: 3.58.0
-  resolution: "svelte@npm:3.58.0"
-  checksum: c05625705961adc971e2bed6b86957c065f34e9d358390ad8dc953f8b4c956bb5ed297e3466f18c8080339cd26b973294489ee4094800fd75a8650fa1f6a9b52
-  languageName: node
-  linkType: hard
-
 "synckit@npm:^0.8.0":
   version: 0.8.3
   resolution: "synckit@npm:0.8.3"
@@ -9505,7 +9410,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.3, tslib@npm:^2.4.0":
+"tslib@npm:^2.4.0":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
@@ -10007,7 +9912,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitefu@npm:^0.2.3, vitefu@npm:^0.2.4":
+"vitefu@npm:^0.2.4":
   version: 0.2.4
   resolution: "vitefu@npm:0.2.4"
   peerDependencies:
@@ -10150,7 +10055,6 @@ __metadata:
     "@astrojs/mdx": ^0.19.0
     "@astrojs/prefetch": ^0.2.1
     "@astrojs/sitemap": ^1.2.2
-    "@astrojs/svelte": ^2.1.0
     "@astrojs/tailwind": ^3.1.1
     "@astrojs/ts-plugin": ^0.4.4
     "@commitlint/cli": ^17.6.1
@@ -10168,7 +10072,6 @@ __metadata:
     prettier: 2.8.7
     prettier-plugin-astro: ^0.8.0
     sass: ^1.62.0
-    svelte: ^3.58.0
     tailwindcss: ^3.3.1
     typescript: ^5.0.4
   languageName: unknown

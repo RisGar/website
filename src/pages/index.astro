@@ -3,7 +3,7 @@ import { getCollection } from "astro:content"
 
 import Page from "@layouts/page.astro"
 
-import Button from "@components/Button.svelte"
+import Button from "@components/Button.astro"
 import PortfolioPreview from "@components/PortfolioPreview.astro"
 
 const project = (await getCollection("projects")).sort(

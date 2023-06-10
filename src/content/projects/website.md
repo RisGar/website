@@ -1,7 +1,7 @@
 ---
 title: Personal Website
 publishDate: 2020-10-02 00:00:00
-img: assets/website.jpg
+img: https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2864&q=80
 img_alt: Gaming keyboard with purple lighting on the keycaps.
 description: |
   How I build my personal website

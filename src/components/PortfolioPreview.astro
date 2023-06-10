@@ -8,15 +8,6 @@ interface Props {
 const { data, slug } = Astro.props.project
 ---
 
-<!-- <a class="card" href={`/projects/${slug}`}>
-  <span class="title">{data.title}</span>
-  <img
-    src={data.img}
-    alt={data.img_alt || ""}
-    loading="lazy"
-    decoding="async"
-  />
-</a> -->
 <a href={`/projects/${slug}`} rel="prefetch">
   <div
     class="relative transition border-2 border-solid border-white rounded-lg hover:bg-white hover:bg-opacity-5"
