@@ -8,7 +8,7 @@ import mdx from "@astrojs/mdx"
 
 export default defineConfig({
   integrations: [
-    tailwind({ config: { applyBaseStyles: false } }),
+    tailwind({ applyBaseStyles: false }),
     robotsTxt(),
     sitemap(),
     prefetch({ throttle: 5 }),
