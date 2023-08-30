@@ -7,7 +7,7 @@ My personal portfolio website built using the Astro framework and Svelte compone
 Install dependencies
 
 ```bash
-  yarn ci
+  yarn install
 ```
 
 ## Commands
