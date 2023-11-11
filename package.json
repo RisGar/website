@@ -9,31 +9,33 @@
     "check": "astro check",
     "start": "astro dev",
     "preview": "astro preview",
-    "postinstall": "husky install"
+    "prepare": "husky install"
   },
-  "packageManager": "yarn@3.6.3",
+  "packageManager": "pnpm@8.8.0",
   "dependencies": {
     "@astrojs/mdx": "^1.0.0",
     "@astrojs/prefetch": "^0.4.0",
     "@astrojs/sitemap": "^3.0.0",
     "@astrojs/tailwind": "^5.0.0",
     "@astrojs/ts-plugin": "^1.1.3",
-    "@commitlint/cli": "^17.7.1",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/cli": "^18.4.0",
+    "@commitlint/config-conventional": "^18.4.0",
     "@fontsource/inter": "^5.0.8",
     "@tailwindcss/typography": "^0.5.9",
     "@types/eslint": "^8.44.2",
     "@typescript-eslint/parser": "^6.5.0",
-    "astro": "^3.0.2",
-    "astro-robots-txt": "^0.5.0",
+    "astro": "^3.5.2",
+    "astro-robots-txt": "^1.0.0",
     "astrojs-service-worker": "^1.0.0",
     "eslint": "^8.48.0",
     "eslint-plugin-astro": "^0.29.0",
-    "husky": "^8.0.3",
     "prettier": "3.0.3",
     "prettier-plugin-astro": "^0.12.0",
     "sass": "^1.66.1",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0"
   }
 }
