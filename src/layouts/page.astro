@@ -7,7 +7,7 @@ import "../styles/global.scss"
 
 import "@fontsource/inter/latin.css"
 
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from "astro:transitions"
 
 const defaultTitle = metadata.title
 const defaultDesc = metadata.description
@@ -20,7 +20,7 @@ interface Props {
 const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!--Metadata -->
@@ -65,15 +65,12 @@ const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
     <ViewTransitions />
   </head>
 
-  <body>
-    <Nav />
-
+  <body class="bg-neutral-900 text-neutral-100">
     <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
       <slot />
     </div>
+    <footer>
+      <Footer />
+    </footer>
   </body>
-
-  <footer>
-    <Footer />
-  </footer>
 </html>

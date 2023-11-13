@@ -1,50 +1,26 @@
 ---
-import { getCollection } from "astro:content"
 import Page from "@layouts/page.astro"
 import Button from "@components/Button.astro"
-import PortfolioPreview from "@components/PortfolioPreview.astro"
-
-const project = (await getCollection("projects")).sort(
-  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
-)[0]
+import Twitter from "../components/icons/Twitter.astro"
 ---
 
 <Page>
   <header class="relative overflow-hidden">
-    <h1 class="mb-6 text-4xl font-extrabold">Rishab Garg</h1>
-    <div>
-      <span class="tag-card">👩‍💻 Developer</span>
-      <span class="tag-card ml-2">🎓 Student</span>
-      <p class="leading-loose text-xl mt-6 mb-0">
-        Hobby programmer focussing on web-based and machine learning projects
-      </p>
-    </div>
+    <h1 class="mb-6 mt-20 text-3xl font-medium">Rishab Garg</h1>
+    <p class="leading-loose text-xl mt-6">
+      I am a student in sixth form doing my A-levels in Germany. I am a hobby
+      programmer and am focussing on web-based and machine learning projects
+      right now.
+    </p>
+    <Button><Twitter /> Twitter</Button>
   </header>
 
-  <main class="my-6">
-    <div class="grid gap-x-20 lg:grid-cols-2">
-      <div class="section">
-        <h2 class="font-medium text-3xl mt-16 mb-8">Latest Project</h2>
-        <PortfolioPreview project={project} />
-        <div class="mt-8 text-center lg:text-left">
-          <a href="/projects" rel="prefetch">
-            <Button>View All</Button>
-          </a>
-        </div>
-      </div>
-      <div class="section">
-        <h2 class="font-medium text-3xl mt-16 mb-8">About me</h2>
-        <p class="leading-loose mb-4 text-lg">
-          Hello! <br />
-          My name is Rishab Garg and I am a student in sixth form doing my A-levels
-          in Germany. I am a hobby programmer and am focussing on web-based and machine
-          learning projects right now.
-        </p><div class="mt-8 text-center lg:text-left">
-          <a href="/about" rel="prefetch">
-            <Button>Read more</Button>
-          </a>
-        </div>
-      </div>
+  <main class="mt-6">
+    <h2 class="text-xl mt-16 mb-8">Latest Projects</h2>
+    <div class="mt-8 text-center lg:text-left">
+      <a href="/projects" rel="prefetch">
+        <Button>View All</Button>
+      </a>
     </div>
   </main>
 </Page>

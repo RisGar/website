@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/mdx':
     specifier: ^1.0.0
-    version: 1.1.4(astro@3.5.2)
+    version: 1.1.4(astro@3.5.3)
   '@astrojs/prefetch':
     specifier: ^0.4.0
     version: 0.4.1
@@ -16,13 +16,13 @@ dependencies:
     version: 3.0.3
   '@astrojs/tailwind':
     specifier: ^5.0.0
-    version: 5.0.2(astro@3.5.2)(tailwindcss@3.3.5)
+    version: 5.0.2(astro@3.5.3)(tailwindcss@3.3.5)
   '@astrojs/ts-plugin':
     specifier: ^1.1.3
     version: 1.3.1
   '@commitlint/cli':
-    specifier: ^18.4.0
-    version: 18.4.0(typescript@5.2.2)
+    specifier: ^18.4.1
+    version: 18.4.1(typescript@5.2.2)
   '@commitlint/config-conventional':
     specifier: ^18.4.0
     version: 18.4.0
@@ -39,14 +39,14 @@ dependencies:
     specifier: ^6.5.0
     version: 6.10.0(eslint@8.53.0)(typescript@5.2.2)
   astro:
-    specifier: ^3.5.2
-    version: 3.5.2(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2)
+    specifier: ^3.5.3
+    version: 3.5.3(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2)
   astro-robots-txt:
     specifier: ^1.0.0
     version: 1.0.0
   astrojs-service-worker:
     specifier: ^1.0.0
-    version: 1.1.0(astro@3.5.2)
+    version: 1.1.0(astro@3.5.3)
   eslint:
     specifier: ^8.48.0
     version: 8.53.0
@@ -118,13 +118,13 @@ packages:
     resolution: {integrity: sha512-06DD2ZnItMwUnH81LBLco3tWjcZ1lGU9rLCCBaeUCGYe9cI0wKyY2W3kDyoW1I6GmcWgt1fu+D1CTvz+FIKf8A==}
     dev: false
 
-  /@astrojs/markdown-remark@3.4.0(astro@3.5.2):
+  /@astrojs/markdown-remark@3.4.0(astro@3.5.3):
     resolution: {integrity: sha512-uzLSKBQ4e70aH8gEbBHZ2pnv/KOJKB3WrXFBOF0U5Uwjcr2LNWeIBLjPRQjA4tbtteELh84YPBHny21mhvBGVA==}
     peerDependencies:
       astro: ^3.0.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.5.2(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2)
+      astro: 3.5.3(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2)
       github-slugger: 2.0.0
       import-meta-resolve: 3.1.1
       mdast-util-definitions: 6.0.0
@@ -142,16 +142,16 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/mdx@1.1.4(astro@3.5.2):
+  /@astrojs/mdx@1.1.4(astro@3.5.3):
     resolution: {integrity: sha512-yP5O3TuSx/vKTyrw4ZPuRH/sXIKj5zDN03AZQt4Rlv8W7mUCpQnYC3bTOrnhBvNxLRCmB1WL2cip9RUmvd4MQw==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       astro: ^3.0.0
     dependencies:
-      '@astrojs/markdown-remark': 3.4.0(astro@3.5.2)
+      '@astrojs/markdown-remark': 3.4.0(astro@3.5.3)
       '@mdx-js/mdx': 2.3.0
       acorn: 8.11.2
-      astro: 3.5.2(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2)
+      astro: 3.5.3(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2)
       es-module-lexer: 1.4.0
       estree-util-visit: 1.2.1
       github-slugger: 2.0.0
@@ -188,13 +188,13 @@ packages:
       zod: 3.22.4
     dev: false
 
-  /@astrojs/tailwind@5.0.2(astro@3.5.2)(tailwindcss@3.3.5):
+  /@astrojs/tailwind@5.0.2(astro@3.5.3)(tailwindcss@3.3.5):
     resolution: {integrity: sha512-oXqeqmBlkQmsltrsU9nEWeXOtrZIAHW8dcmX7BCdrjzPnU6dPwWzAwhddNQ9ihKiWwsLnlbwQZIo2CDigcZlIA==}
     peerDependencies:
       astro: ^3.2.4
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 3.5.2(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2)
+      astro: 3.5.3(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2)
       autoprefixer: 10.4.16(postcss@8.4.31)
       postcss: 8.4.31
       postcss-load-config: 4.0.1(postcss@8.4.31)
@@ -1418,14 +1418,14 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@commitlint/cli@18.4.0(typescript@5.2.2):
-    resolution: {integrity: sha512-iz3KJtmsRRFm6OlyrORxRR6qcrznuoFDzcvMXTMpl6E/wj9Vr2crolDk6cG3bFpJCjWd9C7KidXerRha6hh1kQ==}
+  /@commitlint/cli@18.4.1(typescript@5.2.2):
+    resolution: {integrity: sha512-4+jljfd29Udw9RDDyigavLO9LvdbmB8O9xjDzVZ0R3lJuG7nCeyHgnKWIVpFaN590isZMV/cMeQK0gH7hRF40A==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
       '@commitlint/format': 18.4.0
       '@commitlint/lint': 18.4.0
-      '@commitlint/load': 18.4.0(typescript@5.2.2)
+      '@commitlint/load': 18.4.1(typescript@5.2.2)
       '@commitlint/read': 18.4.0
       '@commitlint/types': 18.4.0
       execa: 5.1.1
@@ -1495,8 +1495,8 @@ packages:
       '@commitlint/types': 18.4.0
     dev: false
 
-  /@commitlint/load@18.4.0(typescript@5.2.2):
-    resolution: {integrity: sha512-7unGl1HGRNMgWrUPmj8OFkJyuNUMb6xA1i53/OAFKd9l+U3C4WTfoJe3t/TUz8vKZLCaDcWWR/b2cw5HveBBFg==}
+  /@commitlint/load@18.4.1(typescript@5.2.2):
+    resolution: {integrity: sha512-o/plBiPJQgbSq/4ipDpsq4HCmURjBAEjr1EO/p2falr3VhwV0WGXTvb8NlihgI8xtSyO6lHvtycrE535GMLQbA==}
     engines: {node: '>=v18'}
     dependencies:
       '@commitlint/config-validator': 18.4.0
@@ -2638,14 +2638,14 @@ packages:
       zod: 3.22.4
     dev: false
 
-  /astro@3.5.2(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2):
-    resolution: {integrity: sha512-AE37biXPX0fH4tmBKpYDyW8UvJ3XLNvRCuUE4RTGf+YdKPPcwGLgV8DE6GLG86pHfevTH+kM581sBDzGh54iEw==}
+  /astro@3.5.3(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2):
+    resolution: {integrity: sha512-08ya96yvQLdZjwYYpylzDTUGcyuA+Kw9zIT2RHfL7VzXtLTL1ZxhQjSo6CiTBH8Tcrdam88Fez+Q1awwKKajGw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
       '@astrojs/compiler': 2.3.0
       '@astrojs/internal-helpers': 0.2.1
-      '@astrojs/markdown-remark': 3.4.0(astro@3.5.2)
+      '@astrojs/markdown-remark': 3.4.0(astro@3.5.3)
       '@astrojs/telemetry': 3.0.4
       '@babel/core': 7.23.3
       '@babel/generator': 7.23.3
@@ -2725,12 +2725,12 @@ packages:
       synckit: 0.8.5
     dev: false
 
-  /astrojs-service-worker@1.1.0(astro@3.5.2):
+  /astrojs-service-worker@1.1.0(astro@3.5.3):
     resolution: {integrity: sha512-B/PjsQAEmWBS8DaIsjF3Yg+oF9fVVKNPdQFVumop8cUHy2/LJmpJuKc2THsSDIT5B64pYws+MhxVgQXS21Yngg==}
     peerDependencies:
       astro: '>=1.0.0'
     dependencies:
-      astro: 3.5.2(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2)
+      astro: 3.5.3(@types/node@18.18.9)(sass@1.69.5)(typescript@5.2.2)
       workbox-build: 6.6.0
     transitivePeerDependencies:
       - '@types/babel__core'
