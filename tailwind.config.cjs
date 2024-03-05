@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
+  content: ["./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
       colors: {
@@ -18,24 +17,21 @@ module.exports = {
         "gutter-grey": "#4b5263",
         "comment-grey": "#5c6370",
       },
+      animation: {
+        rotate: "rotate 20s infinite",
+      },
+      keyframes: {
+        rotate: {
+          from: { rotate: "0deg" },
+          "50%": { scale: "1 1.5" },
+          to: { rotate: "360deg" },
+        },
+      },
     },
     fontFamily: {
-      sans: [
-        "Inter",
-        "ui-sans-serif",
-        "system-ui",
-        "Segoe UI",
-        "Roboto",
-        "Oxygen",
-        "Ubuntu",
-        "Cantarell",
-        "Fira Sans",
-        "Droid Sans",
-        "Helvetica Neue",
-        "sans-serif",
-      ],
+      sans: ["Inter", "sans-serif"],
+      serif: ["DM Serif Display", "serif"],
     },
   },
-  plugins: [
-    require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography")],
 }
