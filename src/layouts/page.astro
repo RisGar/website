@@ -6,6 +6,7 @@ import "../styles/global.scss"
 
 import "@fontsource/inter/latin.css"
 import "@fontsource/dm-serif-display"
+import "@fontsource/lato"
 
 import { ViewTransitions } from "astro:transitions"
 
@@ -74,10 +75,10 @@ const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
   </head>
 
   <body class="h-full m-0 overflow-hidden
-  bg-neutral-900 text-neutral-100">
+  text-neutral-900 bg-neutral-100">
     <div
       id="blob"
-      class="bg-white h-[6vmax] aspect-square
+      class="bg-black h-[6vmax] aspect-square
       absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2
       rounded-full
       bg-gradient-to-r from-cyan to-purple-500 opacity-80
