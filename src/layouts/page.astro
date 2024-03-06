@@ -1,13 +1,15 @@
 ---
-import Nav from "../components/Nav.astro"
 import Footer from "../components/Footer.astro"
 import { metadata } from "../defaults"
 
 import "../styles/global.scss"
 
-import "@fontsource/inter/latin.css"
+import "@fontsource/dm-serif-display"
+import "@fontsource/lato"
 
-import { ViewTransitions } from 'astro:transitions';
+import SpeedInsights from "@vercel/speed-insights/astro"
+
+import { ViewTransitions } from "astro:transitions"
 
 const defaultTitle = metadata.title
 const defaultDesc = metadata.description
@@ -20,7 +22,7 @@ interface Props {
 const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!--Metadata -->
@@ -54,26 +56,45 @@ const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
 
     <meta content="#da532c" data-react-helmet="true" name="theme-color" />
 
-    <!--Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <SpeedInsights />
 
     <ViewTransitions />
+
+    <script>
+      const blob = document.getElementById("blob")!
+
+      window.onpointermove = (event) => {
+        const { clientX, clientY } = event
+
+        blob.animate(
+          {
+            left: `${clientX}px`,
+            top: `${clientY}px`,
+          },
+          { duration: 500, fill: "forwards" }
+        )
+      }
+    </script>
   </head>
 
-  <body>
-    <Nav />
+  <body class="h-full m-0 overflow-hidden
+  text-neutral-900 bg-neutral-100">
+    <div
+      id="blob"
+      class="bg-black h-[6vmax] aspect-square
+      absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2
+      rounded-full
+      bg-gradient-to-r from-cyan to-purple-500 opacity-80
+      -z-20"
+    >
+    </div>
+    <div class="h-full w-full absolute backdrop-blur-[3vmax] -z-10"></div>
 
     <div class="lg:max-w-[50vw] max-w-[70vw] mx-auto">
       <slot />
     </div>
+    <footer>
+      <Footer />
+    </footer>
   </body>
-
-  <footer>
-    <Footer />
-  </footer>
 </html>
