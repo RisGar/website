@@ -4,9 +4,10 @@ import { metadata } from "../defaults"
 
 import "../styles/global.scss"
 
-import "@fontsource/inter/latin.css"
 import "@fontsource/dm-serif-display"
 import "@fontsource/lato"
+
+import SpeedInsights from "@vercel/speed-insights/astro"
 
 import { ViewTransitions } from "astro:transitions"
 
@@ -54,6 +55,8 @@ const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
     <meta name="theme-color" content="#282c34" />
 
     <meta content="#da532c" data-react-helmet="true" name="theme-color" />
+
+    <SpeedInsights />
 
     <ViewTransitions />
 

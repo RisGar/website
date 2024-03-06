@@ -5,6 +5,8 @@ import sitemap from "@astrojs/sitemap"
 import serviceWorker from "astrojs-service-worker"
 import compress from "astro-compress"
 
+import vercel from "@astrojs/vercel/static"
+
 // https://astro.build/config
 export default defineConfig({
   prefetch: {
@@ -20,4 +22,10 @@ export default defineConfig({
     compress(),
   ],
   site: "https://rishab-garg.me",
+  output: "static",
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
 })
