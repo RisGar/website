@@ -1,11 +1,9 @@
 ---
-import Footer from "../components/Footer.astro"
-import { metadata } from "../defaults"
-
-import "../styles/global.scss"
+import Footer from "@components/Footer.astro"
+import { metadata } from "@/defaults"
 
 import "@fontsource/dm-serif-display"
-import "@fontsource/lato"
+import "@fontsource-variable/dm-sans"
 
 import SpeedInsights from "@vercel/speed-insights/astro"
 
@@ -71,7 +69,7 @@ const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
             left: `${clientX}px`,
             top: `${clientY}px`,
           },
-          { duration: 500, fill: "forwards" }
+          { duration: 1000, fill: "forwards" }
         )
       }
     </script>

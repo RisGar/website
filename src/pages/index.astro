@@ -1,22 +1,29 @@
 ---
 import Page from "@layouts/page.astro"
 import Button from "@components/Button.astro"
-import Twitter from "../components/icons/Twitter.astro"
+import GitHub from "@components/icons/GitHub.astro"
+import Mastodon from "@components/icons/Mastodon.astro"
 ---
 
 <Page>
   <header class="relative overflow-hidden">
-    <h1 class="mb-6 mt-20 text-3xl font-medium font-serif">Rishab Garg</h1>
-    <p class="leading-loose text-lg mt-6">
-      Coming soon…
-      <!-- I am a student in sixth form doing my A-levels in Germany. I am a hobby
-      programmer and focussing on web-based and machine learning projects right
-      now. -->
-    </p>
-    <!-- <Button><Twitter /> Twitter</Button> -->
+    <h1 class="mb-6 mt-20 text-3xl font-serif">Rishab Garg</h1>
+    <div class="flex">
+      <!-- <a href="https://github.com/RisGar" class="mr-2"><GitHub /></a>
+      <a href="https://mastodon.social/@risgar" class="mr-2"><Mastodon /></a>
+      <a href="https://blog.rishab-garg.me/" class="mr-2"></a> -->
+    </div>
   </header>
 
-  <!-- <main class="mt-6">
+  <p class="leading-loose text-lg mt-6">
+    TODO
+    <!-- Hello! I'm a computer science student and part-time software engineer based -->
+    <!-- in Germany. -->
+  </p>
+  <!-- <Button><Twitter /> Twitter</Button> -->
+</Page>
+
+<!-- <main class="mt-6">
     <h2 class="text-xl mt-16 mb-8">Latest Projects</h2>
     <div class="mt-8 text-center lg:text-left">
       <a href="/projects">
@@ -24,4 +31,3 @@ import Twitter from "../components/icons/Twitter.astro"
       </a>
     </div>
   </main> -->
-</Page>

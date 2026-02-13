@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
@@ -29,9 +29,9 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["Lato", "sans-serif"],
+      sans: ["DM Sans Variable", "sans-serif"],
       serif: ["DM Serif Display", "serif"],
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [],
 }
