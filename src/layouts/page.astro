@@ -1,23 +1,20 @@
 ---
-import Footer from "@components/Footer.astro"
-import { metadata } from "@/defaults"
+import Footer from "@components/Footer.astro";
+import { metadata } from "@/defaults";
 
-import "@fontsource/dm-serif-display"
-import "@fontsource-variable/dm-sans"
+import "@fontsource/dm-serif-display";
+import "@fontsource-variable/dm-sans";
 
-import SpeedInsights from "@vercel/speed-insights/astro"
-
-import { ViewTransitions } from "astro:transitions"
-
-const defaultTitle = metadata.title
-const defaultDesc = metadata.description
+const defaultTitle = metadata.title;
+const defaultDesc = metadata.description;
 
 interface Props {
-  title?: string
-  description?: string
+  title?: string;
+  description?: string;
 }
 
-const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
+const { title = defaultTitle, description = defaultDesc } =
+  Astro.props as Props;
 ---
 
 <!doctype html>
@@ -53,10 +50,6 @@ const { title = defaultTitle, description = defaultDesc } = Astro.props as Props
     <meta name="theme-color" content="#282c34" />
 
     <meta content="#da532c" data-react-helmet="true" name="theme-color" />
-
-    <SpeedInsights />
-
-    <ViewTransitions />
 
     <script>
       const blob = document.getElementById("blob")!
